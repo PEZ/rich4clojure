@@ -1,0 +1,13 @@
+{
+  "calva.replConnectSequences": [
+    {
+      "name": "4Clojure",
+      "projectType": "deps.edn",
+      "menuSelections": {
+        "cljAliases": ["repl"]
+      },
+      "afterCLJReplJackInCode": "(require 'repl)",
+      "cljsType": "none"
+    }
+  ]
+}
