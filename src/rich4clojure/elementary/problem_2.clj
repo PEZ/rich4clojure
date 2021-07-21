@@ -12,6 +12,8 @@
 ;; case, a single number) - do not retype the whole
 ;; problem.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
@@ -20,4 +22,4 @@
  (- 10 (* 2 3)) := __)
 
 ;; Share your solution, and/or check how others did it:
-;; https://gist.github.com/PEZ/0431a32b7520fbb82264004059a32d90
+;; https://gist.github.com/0431a32b7520fbb82264004059a32d90

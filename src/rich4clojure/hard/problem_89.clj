@@ -24,6 +24,8 @@
 ;; 
 ;; - All edges are undirected.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

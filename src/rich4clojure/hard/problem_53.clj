@@ -12,6 +12,8 @@
 ;; occurs first. An increasing sub-sequence must have a
 ;; length of 2 or greater to qualify.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

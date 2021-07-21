@@ -12,6 +12,8 @@
 ;; an integer n, and returns true iff it is a balanced
 ;; prime.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

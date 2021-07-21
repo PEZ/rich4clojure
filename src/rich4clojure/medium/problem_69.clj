@@ -16,6 +16,8 @@
 
 (def restricted [merge-with])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

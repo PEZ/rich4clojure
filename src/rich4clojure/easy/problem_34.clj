@@ -11,6 +11,8 @@
 
 (def restricted [range])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

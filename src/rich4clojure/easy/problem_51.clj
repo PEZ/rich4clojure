@@ -9,6 +9,8 @@
 ;; Here is an example of some more sophisticated
 ;; destructuring.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

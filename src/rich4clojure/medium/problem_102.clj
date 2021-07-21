@@ -13,6 +13,8 @@
 ;; hyphen-separated strings and converts them to
 ;; camel-case strings.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

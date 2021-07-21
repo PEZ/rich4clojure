@@ -10,6 +10,8 @@
 ;; given set. The power set of a set x is the set of all
 ;; subsets of x, including the empty set and x itself.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

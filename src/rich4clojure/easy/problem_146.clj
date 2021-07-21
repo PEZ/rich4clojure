@@ -27,6 +27,8 @@
 ;; 1 That is, (get-in original [k1 k2]) should be the
 ;; same as (get result [k1 k2])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

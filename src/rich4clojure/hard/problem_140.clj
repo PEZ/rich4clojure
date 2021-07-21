@@ -22,6 +22,8 @@
 ;; PS — You may want to give this a read before
 ;; proceeding: K-Maps
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

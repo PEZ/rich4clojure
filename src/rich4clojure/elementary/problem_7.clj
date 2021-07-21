@@ -9,6 +9,8 @@
 ;; return a new vector with one or more items "added" to
 ;; the end.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

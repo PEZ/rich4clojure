@@ -21,6 +21,8 @@
 ;; WARNING: Some of the test cases may timeout if you
 ;; write an inefficient solution!
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

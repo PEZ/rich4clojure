@@ -19,6 +19,8 @@
 ;; working outwards, with the initial direction being down
 ;; and to the right.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

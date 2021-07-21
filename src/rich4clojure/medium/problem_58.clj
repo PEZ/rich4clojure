@@ -13,6 +13,8 @@
 
 (def restricted [comp])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
@@ -20,8 +22,8 @@
 (tests
  [3 2 1] := ((__ rest reverse) [1 2 3 4])
  5 := ((__ (partial + 3) second) [1 2 3 4])
- true := ((__ zero? (fn* [p1__16206#] (mod p1__16206# 8)) +) 3 5 7 9)
- HELLO := ((__ (fn* [p1__16207#] (.toUpperCase p1__16207#)) (fn* [p1__16208#] (apply str p1__16208#)) take) 5 "hello world"))
+ true := ((__ zero? (fn* [p1__16884#] (mod p1__16884# 8)) +) 3 5 7 9)
+ HELLO := ((__ (fn* [p1__16885#] (.toUpperCase p1__16885#)) (fn* [p1__16886#] (apply str p1__16886#)) take) 5 "hello world"))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/ecb209948f280eeb565745dce17937f4

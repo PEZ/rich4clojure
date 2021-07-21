@@ -9,6 +9,8 @@
 ;; Write a function which returns the first X fibonacci
 ;; numbers.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

@@ -12,6 +12,8 @@
 ;; 
 ;; You may wish to read this .
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

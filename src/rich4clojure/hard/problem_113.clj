@@ -16,6 +16,8 @@
 
 (def restricted [proxy])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

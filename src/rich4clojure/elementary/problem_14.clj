@@ -7,6 +7,8 @@
 ;; 
 ;; Clojure has many different ways to create functions.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
@@ -14,7 +16,7 @@
 (tests
  __ := ((fn add-five [x] (+ x 5)) 3)
  __ := ((fn [x] (+ x 5)) 3)
- __ := ((fn* [p1__16201#] (+ p1__16201# 5)) 3)
+ __ := ((fn* [p1__16879#] (+ p1__16879# 5)) 3)
  __ := ((partial + 5) 3))
 
 ;; Share your solution, and/or check how others did it:

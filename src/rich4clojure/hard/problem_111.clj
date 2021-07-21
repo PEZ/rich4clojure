@@ -39,6 +39,8 @@
 ;; - Words may be placed vertically (proceeding top-down
 ;; only), or horizontally (proceeding left-right only).
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

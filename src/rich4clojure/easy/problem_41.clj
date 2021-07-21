@@ -9,6 +9,8 @@
 ;; Write a function which drops every Nth item from a
 ;; sequence.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

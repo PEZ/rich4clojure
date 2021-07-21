@@ -32,6 +32,8 @@
 ;; Write a function that accepts a board, and returns a
 ;; board representing the next generation of cells.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

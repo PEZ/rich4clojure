@@ -19,6 +19,8 @@
 ;; * x > y → :gt
 ;; * x < y → :lt
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

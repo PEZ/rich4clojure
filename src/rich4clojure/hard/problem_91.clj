@@ -23,6 +23,8 @@
 ;; -Each edge is undirected (can be traversed either
 ;; direction).
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

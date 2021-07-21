@@ -12,6 +12,8 @@
 ;; Note : the brackets [] surrounding the blanks __ are
 ;; part of the test case.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

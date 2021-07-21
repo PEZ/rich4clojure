@@ -11,6 +11,8 @@
 
 (def restricted [nth])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

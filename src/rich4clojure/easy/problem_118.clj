@@ -13,6 +13,8 @@
 
 (def restricted [map map-indexed mapcat for])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
@@ -23,4 +25,4 @@
  [1000000 1000001] := (->> (__ inc (range)) (drop (dec 1000000)) (take 2)))
 
 ;; Share your solution, and/or check how others did it:
-;; https://gist.github.com/PEZ/fcd991cd17eb81a7e9a42d84a0cda89f
+;; https://gist.github.com/fcd991cd17eb81a7e9a42d84a0cda89f

@@ -14,6 +14,8 @@
 ;; tic-tac-toe board and returns :x if X has won, :o if O
 ;; has won, and nil if neither player has won.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

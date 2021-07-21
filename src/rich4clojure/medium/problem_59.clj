@@ -13,13 +13,15 @@
 
 (def restricted [juxt])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
 
 (tests
  [21 6 1] := ((__ + max min) 2 3 5 1 6 4)
- ["HELLO" 5] := ((__ (fn* [p1__16209#] (.toUpperCase p1__16209#)) count) "hello")
+ ["HELLO" 5] := ((__ (fn* [p1__16887#] (.toUpperCase p1__16887#)) count) "hello")
  [2 6 4] := ((__ :a :c :b) {:a 2, :b 4, :c 6, :d 8, :e 10}))
 
 ;; Share your solution, and/or check how others did it:

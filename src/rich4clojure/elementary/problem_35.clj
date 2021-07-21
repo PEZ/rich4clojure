@@ -9,6 +9,8 @@
 ;; Clojure lets you give local names to values using the
 ;; special let-form.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

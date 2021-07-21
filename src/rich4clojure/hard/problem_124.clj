@@ -21,6 +21,8 @@
 ;; example, [0 1] is the topmost row, second column from
 ;; the left.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

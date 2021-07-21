@@ -13,6 +13,8 @@
 ;; not to Tree for a reminder on the tree representation
 ;; we're using).
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

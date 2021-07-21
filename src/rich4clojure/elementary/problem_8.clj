@@ -7,6 +7,8 @@
 ;; 
 ;; Sets are collections of unique values.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

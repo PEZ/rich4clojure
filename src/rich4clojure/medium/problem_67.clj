@@ -9,6 +9,8 @@
 ;; Write a function which returns the first x number of
 ;; prime numbers.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

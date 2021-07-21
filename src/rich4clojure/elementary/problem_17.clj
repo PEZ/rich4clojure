@@ -11,12 +11,14 @@
 ;; s. Do not confuse the map function with the map data
 ;; structure.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
 
 (tests
- __ := (map (fn* [p1__16202#] (+ p1__16202# 5)) (quote (1 2 3))))
+ __ := (map (fn* [p1__16880#] (+ p1__16880# 5)) (quote (1 2 3))))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/39980dc3c5893db22fe13359c3f8c72c

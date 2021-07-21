@@ -11,6 +11,8 @@
 
 (def restricted [split-at])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

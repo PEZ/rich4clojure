@@ -16,6 +16,8 @@
 
 (def restricted [eval resolve])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

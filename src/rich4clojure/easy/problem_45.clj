@@ -9,12 +9,14 @@
 ;; The iterate function can be used to produce an infinite
 ;; lazy sequence.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
 
 (tests
- __ := (take 5 (iterate (fn* [p1__16204#] (+ 3 p1__16204#)) 1)))
+ __ := (take 5 (iterate (fn* [p1__16882#] (+ 3 p1__16882#)) 1)))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/f1da413cb1110daf97898dbf73113894

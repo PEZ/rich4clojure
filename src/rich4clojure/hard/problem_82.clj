@@ -20,6 +20,8 @@
 ;; returns true if they can be arranged into one
 ;; continuous word chain, and false if they cannot.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

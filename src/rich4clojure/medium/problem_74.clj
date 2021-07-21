@@ -10,6 +10,8 @@
 ;; that only contains the numbers which are perfect
 ;; squares.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

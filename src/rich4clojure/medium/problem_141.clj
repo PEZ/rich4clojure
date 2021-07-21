@@ -29,6 +29,8 @@
 ;; Recognize Playing Cards : a hash-map of :suit and a
 ;; numeric :rank. Cards with a larger rank are stronger.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

@@ -12,6 +12,8 @@
 ;; Write a function which calculates Euler's totient
 ;; function.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

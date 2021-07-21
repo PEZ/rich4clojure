@@ -15,6 +15,8 @@
 ;; loops endlessly. Write a function that determines if a
 ;; number is happy or not.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

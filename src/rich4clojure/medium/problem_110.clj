@@ -19,6 +19,8 @@
 ;; pronunciations, each element being a pronunciation of
 ;; the previous element.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

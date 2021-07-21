@@ -13,6 +13,8 @@
 ;; 15 would be [1 5] in base 10, [1 1 1 1] in base 2 and
 ;; [15] in base 16.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

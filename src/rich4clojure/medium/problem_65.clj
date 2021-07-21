@@ -24,6 +24,8 @@
 
 (def restricted [class type Class vector? sequential? list? seq? map? set? instance? getClass])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

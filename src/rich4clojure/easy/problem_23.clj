@@ -10,6 +10,8 @@
 
 (def restricted [reverse rseq])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

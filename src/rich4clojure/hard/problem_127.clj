@@ -55,6 +55,8 @@
 ;; * If no minerals can be harvested from the rock, your
 ;; function should return nil
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

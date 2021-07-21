@@ -10,6 +10,8 @@
 ;; 1+2+3=6. Write a function which returns true for
 ;; perfect numbers and false otherwise.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

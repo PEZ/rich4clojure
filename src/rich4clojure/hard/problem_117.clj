@@ -24,6 +24,8 @@
 ;; edge of the maze. Your function must return true iff
 ;; the maze is solvable by the mouse.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

@@ -8,6 +8,8 @@
 ;; Given two integers, write a function which returns the
 ;; greatest common divisor.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

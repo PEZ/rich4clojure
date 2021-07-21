@@ -11,6 +11,8 @@
 ;; integers between start and end (inclusive) are
 ;; contained in the input sequence.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

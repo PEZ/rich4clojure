@@ -9,6 +9,8 @@
 ;; can use any of the Java string methods on Clojure
 ;; strings.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

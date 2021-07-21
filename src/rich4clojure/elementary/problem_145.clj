@@ -14,13 +14,15 @@
 ;; in mind, read over these for expressions and try to see
 ;; how each of them produces the same result.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
 
 (tests
  __ := (for [x (range 40) :when (= 1 (rem x 4))] x)
- __ := (for [x (iterate (fn* [p1__16225#] (+ 4 p1__16225#)) 0) :let [z (inc x)] :while (< z 40)] z)
+ __ := (for [x (iterate (fn* [p1__16903#] (+ 4 p1__16903#)) 0) :let [z (inc x)] :while (< z 40)] z)
  __ := (for [[x y] (partition 2 (range 20))] (+ x y)))
 
 ;; Share your solution, and/or check how others did it:

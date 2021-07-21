@@ -13,6 +13,8 @@
 ;; The number of k-combinations for a sequence is equal
 ;; to the binomial coefficient .
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

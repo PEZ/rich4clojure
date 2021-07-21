@@ -13,6 +13,8 @@
 ;; squared; whereas 15 is smaller than 1 squared plus 5
 ;; squared.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

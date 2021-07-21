@@ -10,6 +10,8 @@
 ;; true iff the map contains an entry with that key and
 ;; its value is nil.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

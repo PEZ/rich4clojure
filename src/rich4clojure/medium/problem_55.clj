@@ -12,6 +12,8 @@
 
 (def restricted [frequencies])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

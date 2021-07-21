@@ -11,6 +11,8 @@
 ;; reloading the file or evaluating the `(tests ...)`
 ;; form. Don't over think it! Hint: true is equal to true.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
@@ -19,4 +21,4 @@
  __ := true)
 
 ;; Share your solution, and/or check how others did it:
-;; https://gist.github.com/PEZ/417aa01f5c5bb4dc3b1c0fea8d48ae88
+;; https://gist.github.com/417aa01f5c5bb4dc3b1c0fea8d48ae88

@@ -11,6 +11,8 @@
 ;; tree must have a value, a left child, and a right
 ;; child.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

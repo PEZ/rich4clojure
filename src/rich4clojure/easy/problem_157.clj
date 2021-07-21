@@ -10,6 +10,8 @@
 ;; containing the original elements along with their
 ;; index.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

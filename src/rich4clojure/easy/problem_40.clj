@@ -11,6 +11,8 @@
 
 (def restricted [interpose])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

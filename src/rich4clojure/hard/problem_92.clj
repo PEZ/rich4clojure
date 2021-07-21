@@ -18,6 +18,8 @@
 ;; (3999), the largest number representable with ordinary
 ;; letters.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

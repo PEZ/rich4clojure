@@ -12,6 +12,8 @@
 
 (def restricted [intersection])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

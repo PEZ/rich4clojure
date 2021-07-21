@@ -11,6 +11,8 @@
 
 (def restricted [trampoline])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

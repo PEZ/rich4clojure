@@ -12,6 +12,8 @@
 ;; 
 ;; Complete the bindings so all let-parts evaluate to 3.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

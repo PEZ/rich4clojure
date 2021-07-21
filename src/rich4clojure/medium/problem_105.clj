@@ -11,6 +11,8 @@
 ;; the value is a sequence of all the numbers (if any)
 ;; between it and the next keyword in the sequence.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

@@ -11,6 +11,8 @@
 
 (def restricted [max max-key])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

@@ -11,6 +11,8 @@
 ;; corresponding roman numeral in uppercase, adhering to
 ;; the subtractive principle .
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

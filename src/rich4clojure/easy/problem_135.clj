@@ -17,6 +17,8 @@
 ;; that does not do precedence and instead just calculates
 ;; left to right.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

@@ -7,6 +7,8 @@
 ;; 
 ;; Write a function which doubles a number.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

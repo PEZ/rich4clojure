@@ -11,6 +11,8 @@
 
 (def restricted [distinct])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

@@ -8,6 +8,8 @@
 ;; 
 ;; Enter a value which satisfies the following:
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

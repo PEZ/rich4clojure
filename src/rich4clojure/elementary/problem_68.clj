@@ -13,6 +13,8 @@
 ;; passed. Recur must be called from the tail-position,
 ;; and calling it elsewhere will result in an error.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

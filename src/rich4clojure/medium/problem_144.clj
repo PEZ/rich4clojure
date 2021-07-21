@@ -12,13 +12,15 @@
 ;; to the value in order, restarting from the first
 ;; function after it hits the end.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
 
 (tests
  (take 3 (__ 3.14 int double)) := [3.14 3 3.0]
- (take 5 (__ 3 (fn* [p1__16223#] (- p1__16223# 3)) (fn* [p1__16224#] (+ 5 p1__16224#)))) := [3 0 5 2 7]
+ (take 5 (__ 3 (fn* [p1__16901#] (- p1__16901# 3)) (fn* [p1__16902#] (+ 5 p1__16902#)))) := [3 0 5 2 7]
  (take 12 (__ 0 inc dec inc dec inc)) := [0 1 0 1 0 1 2 1 2 1 2 3])
 
 ;; Share your solution, and/or check how others did it:

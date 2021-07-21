@@ -13,6 +13,8 @@
 ;; adjacent number on the next row until the bottom of the
 ;; triangle is reached.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

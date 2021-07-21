@@ -28,6 +28,8 @@
 ;; ten will always be represented with the single
 ;; character "T", rather than the two characters "10".
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

@@ -16,6 +16,8 @@
 ;; 1 Such sets are usually called pairwise disjoint or
 ;; mutually disjoint .
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
@@ -27,7 +29,7 @@
  (__ #{#{(quote (quote f)) (quote (quote a)) (quote (quote c))} #{(quote c) (quote e) (quote d)} #{(quote b) (quote a)} #{(quote h) (quote f) (quote i) (quote g)}}) := true
  (__ #{#{#{} #{:z} #{:y :z :x} #{:y :x}} #{(quote (:x :y :z)) (quote (:z)) (quote (:x :y)) (quote ())} #{(quote [:x :y :z]) [] {} [:x :y] [:z]}}) := false
  (__ #{#{(symbol "true") (quote false)} #{(keyword "yes") :pez.build4clojure/no} #{:yes :no} #{0 (class 1)} #{false (= "true")} #{(class (quote 1)) (int \0)}}) := false
- (__ #{#{(fn* [p1__16231#] (-> p1__16231#)) (fn* [p1__16229#] (-> p1__16229#)) (fn* [p1__16230#] (-> p1__16230#))} #{distinct?} #{(fn* [p1__16232#] (-> p1__16232#)) (fn* [p1__16234#] (-> p1__16234#)) (fn* [p1__16233#] (-> p1__16233#))} #{(fn* [p1__16227#] (-> p1__16227#)) (fn* [p1__16228#] (-> p1__16228#))}}) := true
+ (__ #{#{distinct?} #{(fn* [p1__16906#] (-> p1__16906#)) (fn* [p1__16905#] (-> p1__16905#))} #{(fn* [p1__16909#] (-> p1__16909#)) (fn* [p1__16907#] (-> p1__16907#)) (fn* [p1__16908#] (-> p1__16908#))} #{(fn* [p1__16911#] (-> p1__16911#)) (fn* [p1__16910#] (-> p1__16910#)) (fn* [p1__16912#] (-> p1__16912#))}}) := true
  (__ #{#{contains? set nil? (do)} #{} #{mapcat (quote +) (quote *) (comment mapcat)} #{(quote mapcat) ((fn* [] (-> *))) +}}) := false)
 
 ;; Share your solution, and/or check how others did it:

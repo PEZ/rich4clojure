@@ -9,6 +9,8 @@
 ;; Write a function which removes consecutive duplicates
 ;; from a sequence.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

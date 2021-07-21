@@ -10,6 +10,8 @@
 ;; of a binary relation. The relation will be represented
 ;; as a set of 2 item vectors.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

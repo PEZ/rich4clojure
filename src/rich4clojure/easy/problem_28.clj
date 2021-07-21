@@ -10,6 +10,8 @@
 
 (def restricted [flatten])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

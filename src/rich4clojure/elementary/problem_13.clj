@@ -8,6 +8,8 @@
 ;; The rest function will return all the items of a
 ;; sequence except the first.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

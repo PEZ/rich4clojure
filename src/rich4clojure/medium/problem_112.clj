@@ -13,6 +13,8 @@
 ;; includes all elements starting from the head whose sum
 ;; is less than or equal to the input integer.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

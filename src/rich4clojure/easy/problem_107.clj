@@ -22,6 +22,8 @@
 ;; that the effect of this is to preserve the value of n
 ;; for use outside the scope in which it is defined.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
@@ -29,7 +31,7 @@
 (tests
  256 := ((__ 2) 16)
  [1 8 27 64] := (map (__ 3) [1 2 3 4])
- [1 2 4 8 16] := (map (fn* [p1__16216#] ((__ p1__16216#) 2)) [0 1 2 3 4]))
+ [1 2 4 8 16] := (map (fn* [p1__16894#] ((__ p1__16894#) 2)) [0 1 2 3 4]))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/e94c74af8688f5eca19b4979df86f5f9

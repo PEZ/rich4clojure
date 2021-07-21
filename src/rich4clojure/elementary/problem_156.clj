@@ -18,6 +18,8 @@
 ;; default value and a sequence of keys and constructs a
 ;; map.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

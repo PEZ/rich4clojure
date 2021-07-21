@@ -30,6 +30,8 @@
 ;; an infinite loop that's not producing results every so
 ;; often!
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

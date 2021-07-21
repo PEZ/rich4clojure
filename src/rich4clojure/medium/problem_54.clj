@@ -12,6 +12,8 @@
 
 (def restricted [partition partition-all])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

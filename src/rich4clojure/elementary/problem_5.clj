@@ -12,6 +12,8 @@
 ;; expected to supply only one answer, which will cause
 ;; all the tests to pass.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

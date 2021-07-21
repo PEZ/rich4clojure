@@ -11,6 +11,8 @@
 
 (def restricted [count])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

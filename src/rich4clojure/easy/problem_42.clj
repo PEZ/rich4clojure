@@ -8,6 +8,8 @@
 ;; 
 ;; Write a function which calculates factorials.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

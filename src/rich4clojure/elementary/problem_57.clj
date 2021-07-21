@@ -10,6 +10,8 @@
 ;; This is one of the fundamental techniques used in
 ;; functional programming.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

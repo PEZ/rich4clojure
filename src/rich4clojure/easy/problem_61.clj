@@ -11,6 +11,8 @@
 
 (def restricted [zipmap])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

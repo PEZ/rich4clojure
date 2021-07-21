@@ -16,6 +16,8 @@
 ;; Note: Some test cases have a very large n, so the most
 ;; obvious solution will exceed the time limit.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

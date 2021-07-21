@@ -9,6 +9,8 @@
 ;; Write a function which returns the second to last
 ;; element from a sequence.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

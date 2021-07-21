@@ -17,6 +17,8 @@
 ;; there are multiple shortest paths, you must return the
 ;; length of the shortest path, not the path itself.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

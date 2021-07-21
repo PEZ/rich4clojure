@@ -18,6 +18,8 @@
 ;; Board coordinates should be as in calls to get-in. For
 ;; example, [0 1] is the topmost row, center position.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

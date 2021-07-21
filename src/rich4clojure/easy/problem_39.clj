@@ -12,6 +12,8 @@
 
 (def restricted [interleave])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
@@ -23,4 +25,4 @@
  (__ [30 20] [25 15]) := [30 25 20 15])
 
 ;; Share your solution, and/or check how others did it:
-;; https://gist.github.com/PEZ/65d3ee0ffa567e78927bbebbb9d9cc89
+;; https://gist.github.com/65d3ee0ffa567e78927bbebbb9d9cc89

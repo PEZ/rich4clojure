@@ -19,6 +19,8 @@
 ;; Write a function which returns the nth row of Pascal's
 ;; Triangle.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

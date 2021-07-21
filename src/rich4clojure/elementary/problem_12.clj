@@ -9,6 +9,8 @@
 ;; operate on sequences with functions like first, second,
 ;; and last.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

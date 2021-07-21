@@ -11,6 +11,8 @@
 ;; number. Write a function which accepts an integer n,
 ;; and returns true iff n is balanced.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

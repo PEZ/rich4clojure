@@ -14,6 +14,8 @@
 ;; least two words. Words without any anagrams should not
 ;; be included in the result.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

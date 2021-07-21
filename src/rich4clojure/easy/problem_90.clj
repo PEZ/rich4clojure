@@ -9,6 +9,8 @@
 ;; Write a function which calculates the Cartesian product
 ;; of two sets.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

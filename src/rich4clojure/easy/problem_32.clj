@@ -9,6 +9,8 @@
 ;; Write a function which duplicates each element of a
 ;; sequence.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

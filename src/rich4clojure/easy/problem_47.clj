@@ -10,6 +10,8 @@
 ;; to use it incorrectly with numerically indexed
 ;; collections like vectors and lists.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

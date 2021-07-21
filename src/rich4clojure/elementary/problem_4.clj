@@ -8,6 +8,8 @@
 ;; Lists can be constructed with either a function or a
 ;; quoted form.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

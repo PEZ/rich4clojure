@@ -19,6 +19,8 @@
 ;; indicate that you would rather overflow into Clojure's
 ;; slower, arbitrary-precision bigint.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

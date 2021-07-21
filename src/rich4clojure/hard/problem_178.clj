@@ -25,6 +25,8 @@
 ;; * Pair: Two cards have the same rank
 ;; * High card: None of the above conditions are met
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
@@ -42,4 +44,4 @@
  :straight-flush := (__ ["HA" "HK" "HQ" "HJ" "HT"]))
 
 ;; Share your solution, and/or check how others did it:
-;; https://gist.github.com/PEZ/c4520f456f1200f3690bace30d9e26f9
+;; https://gist.github.com/c4520f456f1200f3690bace30d9e26f9

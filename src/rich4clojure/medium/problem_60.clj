@@ -13,6 +13,8 @@
 
 (def restricted [reductions])
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

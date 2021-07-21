@@ -17,6 +17,8 @@
 ;; 
 ;; Fun fact: Gus is the name of the 4Clojure dragon .
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

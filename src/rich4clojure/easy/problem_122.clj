@@ -8,6 +8,8 @@
 ;; Convert a binary number, provided in the form of a
 ;; string, to its numerical value.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

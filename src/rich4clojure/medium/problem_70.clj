@@ -10,6 +10,8 @@
 ;; sorted list of words. Capitalization should not affect
 ;; sort order and punctuation should be ignored.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

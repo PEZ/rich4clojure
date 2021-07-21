@@ -9,6 +9,8 @@
 ;; Write a function which packs consecutive duplicates
 ;; into sub-lists.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

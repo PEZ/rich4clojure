@@ -13,6 +13,8 @@
 ;; are properly paired and legally nested, or returns
 ;; falsey otherwise.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

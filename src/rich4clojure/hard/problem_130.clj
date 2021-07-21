@@ -30,6 +30,8 @@
 ;; the node that should become the new root, and the tree
 ;; to transform.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )

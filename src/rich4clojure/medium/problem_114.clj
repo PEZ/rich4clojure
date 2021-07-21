@@ -17,13 +17,15 @@
 ;; sequence of items in the list up to, but not including,
 ;; the n th item that satisfies the predicate.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
 
 (tests
- [2 3 5 7 11 13] := (__ 4 (fn* [p1__16219#] (= 2 (mod p1__16219# 3))) [2 3 5 7 11 13 17 19 23])
- ["this" "is" "a" "sentence"] := (__ 3 (fn* [p1__16220#] (some #{\i} p1__16220#)) ["this" "is" "a" "sentence" "i" "wrote"])
+ [2 3 5 7 11 13] := (__ 4 (fn* [p1__16897#] (= 2 (mod p1__16897# 3))) [2 3 5 7 11 13 17 19 23])
+ ["this" "is" "a" "sentence"] := (__ 3 (fn* [p1__16898#] (some #{\i} p1__16898#)) ["this" "is" "a" "sentence" "i" "wrote"])
  ["this" "is"] := (__ 1 #{"a"} ["this" "is" "a" "sentence" "i" "wrote"]))
 
 ;; Share your solution, and/or check how others did it:

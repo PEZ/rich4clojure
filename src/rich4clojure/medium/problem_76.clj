@@ -16,6 +16,8 @@
 ;; mutually recursive algorithms in a way that won't
 ;; consume the stack.
 
+(def __ :tests-will-fail)
+
 (comment
   
   )
