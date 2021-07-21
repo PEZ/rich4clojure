@@ -2,7 +2,7 @@
   (:require [hyperfiddle.rcf :refer [tests]]))
 
 ;; = Best Hand =
-;; By 4clojure user: toolkit
+;; By 4Clojure user: toolkit
 ;; Difficulty: Hard
 ;; Tags: [strings game]
 ;; 
@@ -10,7 +10,6 @@
 ;; the best poker hand that can be made with five cards.
 ;; The hand rankings are listed below for your
 ;; convenience.
-;; 
 ;; 
 ;; * Straight flush: All cards in the same suit, and in
 ;; sequence
@@ -26,6 +25,10 @@
 ;; * Pair: Two cards have the same rank
 ;; * High card: None of the above conditions are met
 
+(comment
+  
+  )
+
 (tests
  :high-card := (__ ["HA" "D2" "H3" "C9" "DJ"])
  :pair := (__ ["HA" "HQ" "SJ" "DA" "HT"])
@@ -37,3 +40,6 @@
  :full-house := (__ ["HA" "DA" "CA" "HJ" "DJ"])
  :four-of-a-kind := (__ ["HA" "DA" "CA" "SA" "DJ"])
  :straight-flush := (__ ["HA" "HK" "HQ" "HJ" "HT"]))
+
+;; Share your solution, and/or check how others did it:
+;; https://gist.github.com/PEZ/c4520f456f1200f3690bace30d9e26f9

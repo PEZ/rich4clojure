@@ -1,7 +1,7 @@
 {
   "calva.replConnectSequences": [
     {
-      "name": "4Clojure",
+      "name": "Rich 4Clojure",
       "projectType": "deps.edn",
       "menuSelections": {
         "cljAliases": ["repl"]
