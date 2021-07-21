@@ -107,7 +107,7 @@ Also: Congratulations! Now take on the next problem!
 
 #### Stuck?
 
-The `#4clojure`, `#beginners` and `#clojure` channels at the Cljurian's Slack might be places to ask for hints. You might try the [Discussions](https://github.com/PEZ/rich4clojure/discussions) feature. Also: _Each problem has a **gist** linked at the bottom._ The gist's comment section might contain solutions from other users. Sometimes a peek is enough to give some guidance. But, yeah, major **spoiler alert**.
+The `#4clojure`, `#beginners` and `#clojure` channels at the [Clojurian's Slack](http://clojurians.net/) might be places to ask for hints. You might try the [Discussions](https://github.com/PEZ/rich4clojure/discussions) feature. Also: _Each problem has a **gist** linked at the bottom._ The gist's comment section might contain solutions from other users. Sometimes a peek is enough to give some guidance. But, yeah, major **spoiler alert**.
 
 ## What about the name?
 
@@ -115,7 +115,7 @@ The name, **Rich 4Clojure**, comes from the fact that it relies on [Rich Comment
 
 ## Work in progress
 
-This is the first version from a quite automated translation of the orginal problems. There'll be dragons. Please consider filing issues, starting [discussions](https://github.com/PEZ/rich4clojure/discussions), or chat me up on the Clojurian's Slack.
+This is the first version from a quite automated translation of the orginal problems. There'll be dragons. Please consider filing issues, starting [discussions](https://github.com/PEZ/rich4clojure/discussions), or chat me up on the [Clojurian's Slack](http://clojurians.net/) (I'm **@pez**, there).
 
 PR:s are also welcome. If it is the content of a particular problem you want to suggest changes for, edit the `problems.edn` file.
 
