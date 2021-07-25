@@ -50,7 +50,7 @@ Each problem has at least:
     ```clojure
     (def __ :tests-will-fail)
     ```
-    * This symbol is used by the tests.
+    * The tests reference this symbol. You are sometimes supposed to redefine it to something that makes the tests pass, and sometimes you will need to edit the `(tests ...)` form and replace this symbol with something else.
 1. An ”open” `(comment ...)` form (a Rich Comment Form, RFC)
 1. A `(tests ...)` form
 
@@ -96,7 +96,7 @@ To rerun the tests, either reload the file or evaluate the `(tests ...)` form. T
     ```clojure
     (defn __ [x y z] ...)
     ```
-For some problems you rather need to edit the tests and replace each instance of `__` with different (or the same) answers.
+**NB**: For some problems you rather need to edit the tests and *replace* each instance of `__` with your answer.
 
 Basically, treat both the `(comment ...)` and the `(tests ...)` forms as your RFCs. Fiddle, evaluate, fiddle, evaluate, until you have found the solution.
 
