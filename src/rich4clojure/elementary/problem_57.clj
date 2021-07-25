@@ -17,7 +17,7 @@
   )
 
 (tests
- __ := ((fn foo [x] (when (> x 0) (conj (foo (dec x)) x))) 5))
+  __ := ((fn foo [x] (when (> x 0) (conj (foo (dec x)) x))) 5))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/c9b7a459e83135bcb56a2a1148e87216

@@ -16,9 +16,9 @@
   )
 
 (tests
- (__ "HeLlO, WoRlD!") := HLOWRD
- (__ "nothing") := 
- (__ "$#A(*&987Zf") := AZ)
+  (__ "HeLlO, WoRlD!") := "HLOWRD"
+  (__ "nothing") :=
+  (__ "$#A(*&987Zf") := "AZ")
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/bdbcf005bcae10b15531ebe3a7d0be9c

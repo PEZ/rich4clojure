@@ -23,10 +23,19 @@
   )
 
 (tests
- 2 := ((__ (quote (/ a b))) (quote {b 8, a 16}))
- 8 := ((__ (quote (+ a b 2))) (quote {a 2, b 4}))
- [6 0 -4] := (map (__ (quote (* (+ 2 a) (- 10 b)))) (quote [{a 1, b 8} {b 5, a -2} {a 2, b 11}]))
- 1 := ((__ (quote (/ (+ x 2) (* 3 (+ y 1))))) (quote {x 4, y 1})))
+  2 := ((__ '(/ a b))
+      '{b 8 a 16})
+  8 := ((__ '(+ a b 2))
+      '{a 2 b 4})
+  [6 0 -4] :=
+     (map (__ '(* (+ 2 a)
+  	              (- 10 b)))
+	        '[{a 1 b 8}
+	          {b 5 a -2}
+	          {a 2 b 11}])
+  1 := ((__ '(/ (+ x 2)
+              (* 3 (+ y 1))))
+      '{x 4 y 1}))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/8056f0c78af9f89d919db9f42c22cb48

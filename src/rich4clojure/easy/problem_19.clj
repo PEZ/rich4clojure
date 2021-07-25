@@ -18,9 +18,9 @@
   )
 
 (tests
- (__ [1 2 3 4 5]) := 5
- (__ (quote (5 4 3))) := 3
- (__ ["b" "c" "d"]) := d)
+  (__ [1 2 3 4 5]) := 5
+  (__ '(5 4 3)) := 3
+  (__ ["b" "c" "d"]) := "d")
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/374c499f3dad0203503b7dae16bf86f4

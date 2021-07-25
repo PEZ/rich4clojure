@@ -17,11 +17,11 @@
   )
 
 (tests
- (__ 6) := true
- (__ 7) := false
- (__ 496) := true
- (__ 500) := false
- (__ 8128) := true)
+  (__ 6) := true
+  (__ 7) := false
+  (__ 496) := true
+  (__ 500) := false
+  (__ 8128) := true)
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/349c937f940951b1ec6972b98834f185

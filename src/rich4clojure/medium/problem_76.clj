@@ -23,7 +23,13 @@
   )
 
 (tests
- __ := (letfn [(foo [x y] (fn* [] (bar (conj x y) y))) (bar [x y] (if (> (last x) 10) x (fn* [] (foo x (+ 2 y)))))] (trampoline foo [] 1)))
+  __ :=
+   (letfn
+     [(foo [x y] #(bar (conj x y) y))
+      (bar [x y] (if (> (last x) 10)
+                   x
+                   #(foo x (+ 2 y))))]
+     (trampoline foo [] 1)))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/d43e270986333e278bdcf6431cc2ffd4

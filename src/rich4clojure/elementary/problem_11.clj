@@ -15,7 +15,7 @@
   )
 
 (tests
- {:a 1, :b 2, :c 3} := (conj {:a 1} __ [:c 3]))
+  {:a 1, :b 2, :c 3} := (conj {:a 1} __ [:c 3]))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/3a6532504180b1b65534b75a804d6f82

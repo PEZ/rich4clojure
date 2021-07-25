@@ -21,13 +21,27 @@
   )
 
 (tests
-  := (__ [[:e :e :e] [:e :e :e] [:e :e :e]])
- :x := (__ [[:x :e :o] [:x :e :e] [:x :e :o]])
- :o := (__ [[:e :x :e] [:o :o :o] [:x :e :x]])
-  := (__ [[:x :e :o] [:x :x :e] [:o :x :o]])
- :x := (__ [[:x :e :e] [:o :x :e] [:o :e :x]])
- :o := (__ [[:x :e :o] [:x :o :e] [:o :e :x]])
-  := (__ [[:x :o :x] [:x :o :x] [:o :x :o]]))
+  nil := (__ [[:e :e :e]
+            [:e :e :e]
+            [:e :e :e]])
+  :x := (__ [[:x :e :o]
+           [:x :e :e]
+           [:x :e :o]])
+  :o := (__ [[:e :x :e]
+           [:o :o :o]
+           [:x :e :x]])
+  nil := (__ [[:x :e :o]
+            [:x :x :e]
+            [:o :x :o]])
+  :x := (__ [[:x :e :e]
+           [:o :x :e]
+           [:o :e :x]])
+  :o := (__ [[:x :e :o]
+           [:x :o :e]
+           [:o :e :x]])
+  nil := (__ [[:x :o :x]
+            [:x :o :x]
+            [:o :x :o]]))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/949f75d5329f9d7c290db7fe69ced4d7

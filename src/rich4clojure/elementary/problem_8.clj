@@ -14,8 +14,8 @@
   )
 
 (tests
- __ := (set (quote (:a :a :b :c :c :c :c :d :d)))
- __ := (clojure.set/union #{:c :b :a} #{:c :b :d}))
+  __ := (set '(:a :a :b :c :c :c :c :d :d))
+  __ := (clojure.set/union #{:a :b :c} #{:b :c :d}))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/d1f6098dff344875902737842e15543f

@@ -18,10 +18,10 @@
   )
 
 (tests
- {} := (__ [])
- {:a [1]} := (__ [:a 1])
- {:a [1], :b [2]} := (__ [:a 1 :b 2])
- {:a [1 2 3], :b [], :c [4]} := (__ [:a 1 2 3 :b :c 4]))
+  {} := (__ [])
+  {:a [1]} := (__ [:a 1])
+  {:a [1], :b [2]} := (__ [:a 1, :b 2])
+  {:a [1 2 3], :b [], :c [4]} := (__ [:a 1 2 3 :b :c 4]))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/da9a4c4197dc581cb9635fe8358bc62d

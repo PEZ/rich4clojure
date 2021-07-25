@@ -22,10 +22,10 @@
   )
 
 (tests
- (__ 7) := true
- (__ 986543210) := true
- (__ 2) := false
- (__ 3) := false)
+  (__ 7) := true
+  (__ 986543210) := true
+  (__ 2) := false
+  (__ 3) := false)
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/b921948244dc0417fc716fe31cecb359

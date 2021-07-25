@@ -27,12 +27,12 @@
   )
 
 (tests
- true := (__ #{"dog" "oat" "cot" "coat" "hot" "hat" "hog" "cat"})
- false := (__ #{"cot" "hot" "bat" "fat"})
- false := (__ #{"stop" "top" "tops" "toss" "to"})
- true := (__ #{"spot" "pot" "spout" "dot" "pout" "do"})
- true := (__ #{"shares" "are" "hare" "hares" "share"})
- false := (__ #{"are" "hare" "hares" "share"}))
+  true := (__ #{"hat" "coat" "dog" "cat" "oat" "cot" "hot" "hog"})
+  false := (__ #{"cot" "hot" "bat" "fat"})
+  false := (__ #{"to" "top" "stop" "tops" "toss"})
+  true := (__ #{"spout" "do" "pot" "pout" "spot" "dot"})
+  true := (__ #{"share" "hares" "shares" "hare" "are"})
+  false := (__ #{"share" "hares" "hare" "are"}))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/9f1e130d45a4eb86b174a532a79b69b1

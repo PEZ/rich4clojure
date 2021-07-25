@@ -20,7 +20,12 @@
   )
 
 (tests
- __ := (loop [x 5 result []] (if (> x 0) (recur (dec x) (conj result (+ 2 x))) result)))
+  __ :=
+  (loop [x 5
+         result []]
+    (if (> x 0)
+      (recur (dec x) (conj result (+ 2 x)))
+      result)))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/9a8b99903466666209d3edbe4288ed70

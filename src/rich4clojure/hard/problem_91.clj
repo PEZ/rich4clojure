@@ -30,12 +30,16 @@
   )
 
 (tests
- true := (__ #{[:a :a]})
- true := (__ #{[:a :b]})
- false := (__ #{[2 3] [6 4] [5 6] [4 5] [3 1] [1 2]})
- true := (__ #{[2 3] [3 4] [6 4] [5 6] [4 5] [3 1] [1 2]})
- false := (__ #{[:b :e] [:c :d] [:x :y] [:a :b] [:d :a] [:b :c]})
- true := (__ #{[:b :e] [:c :d] [:x :y] [:a :b] [:d :a] [:x :a] [:b :c]}))
+  true := (__ #{[:a :a]})
+  true := (__ #{[:a :b]})
+  false := (__ #{[1 2] [2 3] [3 1]
+               [4 5] [5 6] [6 4]})
+  true := (__ #{[1 2] [2 3] [3 1]
+              [4 5] [5 6] [6 4] [3 4]})
+  false := (__ #{[:a :b] [:b :c] [:c :d]
+               [:x :y] [:d :a] [:b :e]})
+  true := (__ #{[:a :b] [:b :c] [:c :d]
+              [:x :y] [:d :a] [:b :e] [:x :a]}))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/8b02371d00dc7b202887d2acf58f3be8

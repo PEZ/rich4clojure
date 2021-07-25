@@ -23,12 +23,13 @@
   )
 
 (tests
- 1, 2, 3 := (str (__ 2 1 3))
- (quote (2 1 3)) := (seq (__ 2 1 3))
- (quote (2 1 3)) := (seq (__ 2 1 3 3 1 2))
- (quote (1)) := (seq (apply __ (repeat 5 1)))
- 1, 1, 1, 1, 1 := (str (apply __ (repeat 5 1)))
- (= nil (seq (__))) := (= "" (str (__))))
+  "1, 2, 3" := (str (__ 2 1 3))
+  '(2 1 3) := (seq (__ 2 1 3))
+  '(2 1 3) := (seq (__ 2 1 3 3 1 2))
+  '(1) := (seq (apply __ (repeat 5 1)))
+  "1, 1, 1, 1, 1" := (str (apply __ (repeat 5 1)))
+  (= nil (seq (__))) :=
+     (=  "" (str (__))))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/5a33bc5bed21cf8105bcdc239b25e2de

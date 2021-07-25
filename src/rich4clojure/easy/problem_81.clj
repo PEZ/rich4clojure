@@ -19,9 +19,9 @@
   )
 
 (tests
- (__ #{0 1 3 2} #{4 3 2 5}) := #{3 2}
- (__ #{0 1 2} #{4 3 5}) := #{}
- (__ #{:c :b :d :a} #{:e :c :d :f :a}) := #{:c :d :a})
+  (__ #{0 1 2 3} #{2 3 4 5}) := #{2 3}
+  (__ #{0 1 2} #{3 4 5}) := #{}
+  (__ #{:a :b :c :d} #{:c :e :a :f :d}) := #{:a :c :d})
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/a51be488815f09d5d8e68e93d16f61e8

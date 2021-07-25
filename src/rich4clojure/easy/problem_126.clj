@@ -15,7 +15,8 @@
   )
 
 (tests
- [x __] := (and (= (class x) x) x))
+  [x __] :=
+  (and (= (class x) x) x))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/8b24bd0cf40098ec3875dde7ecf3fc5c

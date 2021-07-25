@@ -16,9 +16,9 @@
   )
 
 (tests
- __ := (first (quote (3 2 1)))
- __ := (second [2 3 4])
- __ := (last (list 1 2 3)))
+  __ := (first '(3 2 1))
+  __ := (second [2 3 4])
+  __ := (last (list 1 2 3)))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/f5d00ce2e066fb1487e3c4ffeb9b8848

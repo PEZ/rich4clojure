@@ -15,9 +15,9 @@
   )
 
 (tests
- 10 := (let __ (+ x y))
- 4 := (let __ (+ y z))
- 1 := (let __ z))
+  10 := (let __ (+ x y))
+  4 := (let __ (+ y z))
+  1 := (let __ z))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/ed751b2bcfa34398e03ea9f77a4d12b6

@@ -16,7 +16,7 @@
   )
 
 (tests
- [1 2 [3 4 5] [1 2 3 4 5]] := (let [[a b & c :as d] __] [a b c d]))
+  [1 2 [3 4 5] [1 2 3 4 5]] := (let [[a b & c :as d] __] [a b c d]))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/d4eb7ceb4ae05468135c920a39be2bf8

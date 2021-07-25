@@ -26,10 +26,10 @@
   )
 
 (tests
- [[1 1] [2 1] [1 2 1 1]] := (take 3 (__ [1]))
- [3 1 2 4] := (first (__ [1 1 1 4 4]))
- [1 1 1 3 2 1 3 2 1 1] := (nth (__ [1]) 6)
- 338 := (count (nth (__ [3 2]) 15)))
+  [[1 1] [2 1] [1 2 1 1]] := (take 3 (__ [1]))
+  [3 1 2 4] := (first (__ [1 1 1 4 4]))
+  [1 1 1 3 2 1 3 2 1 1] := (nth (__ [1]) 6)
+  338 := (count (nth (__ [3 2]) 15)))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/f4169b69fdd707f14ae92e5b006ff4b0

@@ -19,10 +19,10 @@
   )
 
 (tests
- (__ 1) := 1
- (__ 10) := (count (quote (1 3 7 9)))
- (__ 40) := 16
- (__ 99) := 60)
+  (__ 1) := 1
+  (__ 10) := (count '(1 3 7 9)) 4
+  (__ 40) := 16
+  (__ 99) := 60)
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/da5e5c50f14f015708f967e20b450874

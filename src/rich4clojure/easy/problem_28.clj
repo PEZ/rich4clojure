@@ -17,9 +17,9 @@
   )
 
 (tests
- (__ (quote ((1 2) 3 [4 [5 6]]))) := (quote (1 2 3 4 5 6))
- (__ ["a" ["b"] "c"]) := (quote ("a" "b" "c"))
- (__ (quote ((((:a)))))) := (quote (:a)))
+  (__ '((1 2) 3 [4 [5 6]])) := '(1 2 3 4 5 6)
+  (__ ["a" ["b"] "c"]) := '("a" "b" "c")
+  (__ '((((:a))))) := '(:a))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/0c6e3c48cac7434882ca4b2c71ebfce1

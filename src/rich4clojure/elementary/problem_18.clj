@@ -17,7 +17,7 @@
   )
 
 (tests
- __ := (filter (fn* [p1__16881#] (> p1__16881# 5)) (quote (3 4 5 6 7))))
+  __ := (filter #(> % 5) '(3 4 5 6 7)))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/5f4df173b9c2f1075262f0f821d83ab0

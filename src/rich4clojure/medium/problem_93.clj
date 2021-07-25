@@ -19,9 +19,12 @@
   )
 
 (tests
- (__ [["Do"] ["Nothing"]]) := [["Do"] ["Nothing"]]
- (__ [[[[:a :b]]] [[:c :d]] [:e :f]]) := [[:a :b] [:c :d] [:e :f]]
- (__ (quote ((1 2) ((3 4) ((((5 6)))))))) := (quote ((1 2) (3 4) (5 6))))
+  (__ [["Do"] ["Nothing"]]) :=
+   [["Do"] ["Nothing"]]
+  (__ [[[[:a :b]]] [[:c :d]] [:e :f]]) :=
+   [[:a :b] [:c :d] [:e :f]]
+  (__ '((1 2)((3 4)((((5 6))))))) :=
+   '((1 2)(3 4)(5 6)))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/9510d5981c9fc900634ab838fad7db5e

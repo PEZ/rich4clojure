@@ -21,7 +21,9 @@
   )
 
 (tests
- (__ (sort (rest (reverse [2 5 4 1 3 6])))) := (-> [2 5 4 1 3 6] (reverse) (rest) (sort) (__)))
+  (__ (sort (rest (reverse [2 5 4 1 3 6])))) :=
+   (-> [2 5 4 1 3 6] (reverse) (rest) (sort) (__))
+   5)
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/1c3da359cc636512f717ff01c4ef2388

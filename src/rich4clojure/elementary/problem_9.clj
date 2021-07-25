@@ -15,7 +15,7 @@
   )
 
 (tests
- #{1 4 3 2} := (conj #{1 4 3} __))
+  #{1 2 3 4} := (conj #{1 4 3} __))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/ad6c54ca6259cd67274a902f2d0be1ff

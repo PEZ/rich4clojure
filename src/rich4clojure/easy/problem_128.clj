@@ -35,10 +35,12 @@
   )
 
 (tests
- {:suit :diamond, :rank 10} := (__ "DQ")
- {:suit :heart, :rank 3} := (__ "H5")
- {:suit :club, :rank 12} := (__ "CA")
- (range 13) := (map (comp :rank __ str) (quote [S2 S3 S4 S5 S6 S7 S8 S9 ST SJ SQ SK SA])))
+  {:suit :diamond :rank 10} := (__ "DQ")
+  {:suit :heart :rank 3} := (__ "H5")
+  {:suit :club :rank 12} := (__ "CA")
+  (range 13) := (map (comp :rank __ str)
+                   '[S2 S3 S4 S5 S6 S7
+                     S8 S9 ST SJ SQ SK SA]))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/462630c19a4463c7a67c4af684c9f71e

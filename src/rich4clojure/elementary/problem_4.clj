@@ -15,7 +15,7 @@
   )
 
 (tests
- (list __) := (quote (:a :b :c)))
+  (list __) := '(:a :b :c))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/447fba2735f190ec4786a4b2cf7d5b76

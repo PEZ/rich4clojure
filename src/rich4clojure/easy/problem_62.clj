@@ -19,9 +19,9 @@
   )
 
 (tests
- (take 5 (__ (fn* [p1__16888#] (* 2 p1__16888#)) 1)) := [1 2 4 8 16]
- (take 100 (__ inc 0)) := (take 100 (range))
- (take 9 (__ (fn* [p1__16889#] (inc (mod p1__16889# 3))) 1)) := (take 9 (cycle [1 2 3])))
+  (take 5 (__ #(* 2 %) 1)) := [1 2 4 8 16]
+  (take 100 (__ inc 0)) := (take 100 (range))
+  (take 9 (__ #(inc (mod % 3)) 1)) := (take 9 (cycle [1 2 3])))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/8d8c071f4df40d8671599b0882174b44

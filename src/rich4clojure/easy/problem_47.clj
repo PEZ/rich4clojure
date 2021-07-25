@@ -17,10 +17,10 @@
   )
 
 (tests
- #{4 6 5} := __
- [1 1 1 1 1] := __
- {4 :a, 2 :b} := __
- (contains? [1 2 4] __) := )
+  #{4 5 6} := __
+  [1 1 1 1 1] := __
+  {4 :a 2 :b} := __
+  (contains? [1 2 4] __) :=)
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/cbcede67c0c350f7d800b078a5c0f525

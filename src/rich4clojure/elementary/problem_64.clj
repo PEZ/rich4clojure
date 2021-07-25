@@ -22,9 +22,9 @@
   )
 
 (tests
- 15 := (reduce __ [1 2 3 4 5])
- 0 := (reduce __ [])
- 6 := (reduce __ 1 [2 3]))
+  15 := (reduce __ [1 2 3 4 5])
+  0 := (reduce __ [])
+  6 := (reduce __ 1 [2 3]))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/94e7ff60b2323d795e30e8d7e185b72e

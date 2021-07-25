@@ -19,9 +19,9 @@
   )
 
 (tests
- (__ 3 (range 9)) := (quote ((0 1 2) (3 4 5) (6 7 8)))
- (__ 2 (range 8)) := (quote ((0 1) (2 3) (4 5) (6 7)))
- (__ 3 (range 8)) := (quote ((0 1 2) (3 4 5))))
+  (__ 3 (range 9)) := '((0 1 2) (3 4 5) (6 7 8))
+  (__ 2 (range 8)) := '((0 1) (2 3) (4 5) (6 7))
+  (__ 3 (range 8)) := '((0 1 2) (3 4 5)))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/1da137c7927d083dfbb4db1686a3e3cf

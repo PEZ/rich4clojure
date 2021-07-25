@@ -14,10 +14,10 @@
   )
 
 (tests
- __ := ((fn add-five [x] (+ x 5)) 3)
- __ := ((fn [x] (+ x 5)) 3)
- __ := ((fn* [p1__16879#] (+ p1__16879# 5)) 3)
- __ := ((partial + 5) 3))
+  __ := ((fn add-five [x] (+ x 5)) 3)
+  __ := ((fn [x] (+ x 5)) 3)
+  __ := (#(+ % 5) 3)
+  __ := ((partial + 5) 3))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/08da0019981a566de6550e692c959a24

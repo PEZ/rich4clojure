@@ -17,12 +17,12 @@
   )
 
 (tests
- false := (__ false false)
- true := (__ true false)
- false := (__ true)
- true := (__ false true false)
- false := (__ true true true)
- true := (__ true true true false))
+  false := (__ false false)
+  true := (__ true false)
+  false := (__ true)
+  true := (__ false true false)
+  false := (__ true true true)
+  true := (__ true true true false))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/7fa7142a58af04b16b35d31ab00248a6

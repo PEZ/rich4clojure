@@ -20,9 +20,9 @@
   )
 
 (tests
- (__ "something") := something
- (__ "multi-word-key") := multiWordKey
- (__ "leaveMeAlone") := leaveMeAlone)
+  (__ "something") := "something"
+  (__ "multi-word-key") := "multiWordKey"
+  (__ "leaveMeAlone") := "leaveMeAlone")
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/14f3b466feeed4d7c0e456762c042aa6

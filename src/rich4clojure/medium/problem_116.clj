@@ -19,9 +19,9 @@
   )
 
 (tests
- false := (__ 4)
- true := (__ 563)
- 1103 := (nth (filter __ (range)) 15))
+  false := (__ 4)
+  true := (__ 563)
+  1103 := (nth (filter __ (range)) 15))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/286f071c259fb6861c10beb7411bde48

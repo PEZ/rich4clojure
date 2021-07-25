@@ -37,12 +37,60 @@
   )
 
 (tests
- (quote (n)) := (__ (quote n) (quote (n)))
- (quote (a (t (e)))) := (__ (quote a) (quote (t (e) (a))))
- (quote (e (t (a)))) := (__ (quote e) (quote (a (t (e)))))
- (quote (a (b (c)))) := (__ (quote a) (quote (c (b (a)))))
- (quote (d (b (c) (e) (a (f (g) (h)))))) := (__ (quote d) (quote (a (b (c) (d) (e)) (f (g) (h)))))
- (quote (c (d) (e) (b (f (g) (h)) (a (i (j (k) (l)) (m (n) (o))))))) := (__ (quote c) (quote (a (b (c (d) (e)) (f (g) (h))) (i (j (k) (l)) (m (n) (o)))))))
+  '(n) :=
+   (__ 'n '(n))
+  '(a (t (e))) :=
+   (__ 'a '(t (e) (a)))
+  '(e (t (a))) :=
+   (__ 'e '(a (t (e))))
+  '(a (b (c))) :=
+   (__ 'a '(c (b (a))))
+  '(d 
+      (b
+        (c)
+        (e)
+        (a 
+          (f 
+            (g) 
+            (h))))) :=
+  (__ 'd '(a
+            (b 
+              (c) 
+              (d) 
+              (e))
+            (f 
+              (g)
+              (h))))
+  '(c 
+      (d) 
+      (e) 
+      (b
+        (f 
+          (g) 
+          (h))
+        (a
+          (i
+          (j
+            (k)
+            (l))
+          (m
+            (n)
+            (o)))))) :=
+   (__ 'c '(a
+             (b
+               (c
+                 (d)
+                 (e))
+               (f
+                 (g)
+                 (h)))
+             (i
+               (j
+                 (k)
+                 (l))
+               (m
+                 (n)
+                 (o))))))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/58bf3dd77606f53cced382363c343ed4

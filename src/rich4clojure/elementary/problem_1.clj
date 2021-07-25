@@ -18,7 +18,7 @@
   )
 
 (tests
- __ := true)
+  __ := true)
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/417aa01f5c5bb4dc3b1c0fea8d48ae88

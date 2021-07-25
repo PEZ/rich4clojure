@@ -31,11 +31,11 @@
   )
 
 (tests
- :map := (__ {:a 1, :b 2})
- :list := (__ (range (rand-int 20)))
- :vector := (__ [1 2 3 4 5 6])
- :set := (__ #{10 (rand-int 5)})
- [:map :set :vector :list] := (map __ [{} #{} [] ()]))
+  :map := (__ {:a 1, :b 2})
+  :list := (__ (range (rand-int 20)))
+  :vector := (__ [1 2 3 4 5 6])
+  :set := (__ #{10 (rand-int 5)})
+  [:map :set :vector :list] := (map __ [{} #{} [] ()]))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/b4436b33f455e68d322970d458830049

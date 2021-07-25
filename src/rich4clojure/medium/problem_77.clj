@@ -21,8 +21,10 @@
   )
 
 (tests
- (__ ["meat" "mat" "team" "mate" "eat"]) := #{#{"meat" "mate" "team"}}
- (__ ["veer" "lake" "item" "kale" "mite" "ever"]) := #{#{"kale" "lake"} #{"item" "mite"} #{"ever" "veer"}})
+  (__ ["meat" "mat" "team" "mate" "eat"]) :=
+   #{#{"meat" "team" "mate"}}
+  (__ ["veer" "lake" "item" "kale" "mite" "ever"]) :=
+   #{#{"veer" "ever"} #{"lake" "kale"} #{"mite" "item"}})
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/0ffdaf0cd713a4df991004e0fccf19ac

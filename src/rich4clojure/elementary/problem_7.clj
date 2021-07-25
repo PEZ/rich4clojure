@@ -16,8 +16,8 @@
   )
 
 (tests
- __ := (conj [1 2 3] 4)
- __ := (conj [1 2] 3 4))
+  __ := (conj [1 2 3] 4)
+  __ := (conj [1 2] 3 4))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/5863d15b78b837e8cdfeb5e97e23d28b

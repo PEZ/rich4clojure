@@ -20,10 +20,10 @@
   )
 
 (tests
- 8 := (__ (range 10))
- 19 := (__ (range 30))
- 50 := (__ (range 100))
- 50 := (__ (range 1000)))
+  8 := (__ (range 10))
+  19 := (__ (range 30))
+  50 := (__ (range 100))
+  50 := (__ (range 1000)))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/80b83817f6c63ee546a5d05e0972a7ea

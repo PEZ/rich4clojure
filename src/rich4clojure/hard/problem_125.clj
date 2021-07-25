@@ -24,7 +24,7 @@
   )
 
 (tests
- (str (quote __)) := (__))
+  (str '__) := (__))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/d3ec1d923933de20ce7ba66afe6a8d45

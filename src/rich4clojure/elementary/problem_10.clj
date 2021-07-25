@@ -16,8 +16,8 @@
   )
 
 (tests
- __ := ((hash-map :a 10 :b 20 :c 30) :b)
- __ := (:b {:a 10, :b 20, :c 30}))
+  __ := ((hash-map :a 10, :b 20, :c 30) :b)
+  __ := (:b {:a 10, :b 20, :c 30}))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/cc20ba916a1f806dccb489d01ea6037b
