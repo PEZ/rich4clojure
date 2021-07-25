@@ -17,13 +17,13 @@
   )
 
 (tests
- __ := (if-not false 1 0)
- __ := (if-not nil 1 0)
- __ := (if true 1 0)
- __ := (if [] 1 0)
- __ := (if [0] 1 0)
- __ := (if 0 1 0)
- __ := (if 1 1 0))
+  __ := (if-not false 1 0)
+  __ := (if-not nil 1 0)
+  __ := (if true 1 0)
+  __ := (if [] 1 0)
+  __ := (if [0] 1 0)
+  __ := (if 0 1 0)
+  __ := (if 1 1 0))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/ef5021f621afad511d1a4b5505fc231f

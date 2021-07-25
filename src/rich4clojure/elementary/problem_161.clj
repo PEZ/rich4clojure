@@ -17,10 +17,10 @@
   )
 
 (tests
- __ := #{2}
- #{1} := __
- __ := #{1 2}
- #{1 2} := __)
+  __ := #{2}
+  #{1} := __
+  __ := #{1 2}
+  #{1 2} := __)
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/fb5992733dcee8d4e449957ed7ece7db

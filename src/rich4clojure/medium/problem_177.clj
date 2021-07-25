@@ -20,18 +20,18 @@
   )
 
 (tests
- This string has no brackets. := 
- class Test {
+  "This string has no brackets." :=
+  "class Test {
       public static void main(String[] args) {
-        System.out.println("Hello world.");
+        System.out.println(\"Hello world.\");
       }
-    } := 
- (__ "(start, end]") := 
- (__ "())") := 
- (__ "[ { ] } ") := 
- ([]([(()){()}(()(()))(([[]]({}()))())]((((()())))))) := 
- (__ "([]([(()){()}(()(()))(([[]]({}([)))())]((((()()))))))") := 
- (__ "[") := )
+    }" :=
+  (__ "(start, end]") :=
+  (__ "())") :=
+  (__ "[ { ] } ") :=
+  "([]([(()){()}(()(()))(([[]]({}()))())]((((()()))))))" :=
+  (__ "([]([(()){()}(()(()))(([[]]({}([)))())]((((()()))))))") :=
+  (__ "[") :=)
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/6b8d50ee0811042bdc646dc9060037e8

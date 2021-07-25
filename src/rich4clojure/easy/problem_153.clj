@@ -23,14 +23,45 @@
   )
 
 (tests
- (__ #{#{\L \P} #{\E \e \R} #{\U} #{\s} #{\.}}) := true
- (__ #{#{:c :b :a} #{:e :c :b :d :a} #{:c :b :d :a} #{:b :a} #{:a}}) := false
- (__ #{#{1 [3 4] 2 [5]} #{[1 2 3] [4 5]} #{4 3 5 [2] [1]} #{[3 4 5] [1 2]}}) := true
- (__ #{#{(quote (quote f)) (quote (quote a)) (quote (quote c))} #{(quote c) (quote e) (quote d)} #{(quote b) (quote a)} #{(quote h) (quote f) (quote i) (quote g)}}) := true
- (__ #{#{#{} #{:z} #{:y :z :x} #{:y :x}} #{(quote (:x :y :z)) (quote (:z)) (quote (:x :y)) (quote ())} #{(quote [:x :y :z]) [] {} [:x :y] [:z]}}) := false
- (__ #{#{(symbol "true") (quote false)} #{(keyword "yes") :pez.build4clojure/no} #{:yes :no} #{0 (class 1)} #{false (= "true")} #{(class (quote 1)) (int \0)}}) := false
- (__ #{#{distinct?} #{(fn* [p1__16906#] (-> p1__16906#)) (fn* [p1__16905#] (-> p1__16905#))} #{(fn* [p1__16909#] (-> p1__16909#)) (fn* [p1__16907#] (-> p1__16907#)) (fn* [p1__16908#] (-> p1__16908#))} #{(fn* [p1__16911#] (-> p1__16911#)) (fn* [p1__16910#] (-> p1__16910#)) (fn* [p1__16912#] (-> p1__16912#))}}) := true
- (__ #{#{contains? set nil? (do)} #{} #{mapcat (quote +) (quote *) (comment mapcat)} #{(quote mapcat) ((fn* [] (-> *))) +}}) := false)
+  (__ #{#{\U} #{\s} #{\e \R \E} #{\P \L} #{\.}}) :=
+   true
+  (__ #{#{:a :b :c :d :e}
+         #{:a :b :c :d}
+         #{:a :b :c}
+         #{:a :b}
+         #{:a}}) :=
+   false
+  (__ #{#{[1 2 3] [4 5]}
+         #{[1 2] [3 4 5]}
+         #{[1] [2] 3 4 5}
+         #{1 2 [3 4] [5]}}) :=
+   true
+  (__ #{#{'a 'b}
+         #{'c 'd 'e}
+         #{'f 'g 'h 'i}
+         #{''a ''c ''f}}) :=
+   true
+  (__ #{#{'(:x :y :z) '(:x :y) '(:z) '()}
+         #{#{:x :y :z} #{:x :y} #{:z} #{}}
+         #{'[:x :y :z] [:x :y] [:z] [] {}}}) :=
+   false
+  (__ #{#{(= "true") false}
+         #{:yes :no}
+         #{(class 1) 0}
+         #{(symbol "true") 'false}
+         #{(keyword "yes") ::no}
+         #{(class '1) (int \0)}}) :=
+   false
+  (__ #{#{distinct?}
+         #{#(-> %) #(-> %)}
+         #{#(-> %) #(-> %) #(-> %)}
+         #{#(-> %) #(-> %) #(-> %)}}) :=
+   true
+  (__ #{#{(#(-> *)) + (quote mapcat) #_ nil}
+         #{'+ '* mapcat (comment mapcat)}
+         #{(do) set contains? nil?}
+         #{, , , #_, , empty?}}) :=
+   false)
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/2993425c507c8be6d1abeae28f8e2511

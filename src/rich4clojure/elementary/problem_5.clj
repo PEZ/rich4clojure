@@ -19,8 +19,8 @@
   )
 
 (tests
- __ := (conj (quote (2 3 4)) 1)
- __ := (conj (quote (3 4)) 2 1))
+  __ := (conj '(2 3 4) 1)
+  __ := (conj '(3 4) 2 1))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/efe2f5aa74f08899ea993bdfaab8da59

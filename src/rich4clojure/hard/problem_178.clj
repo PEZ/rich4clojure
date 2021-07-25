@@ -32,16 +32,16 @@
   )
 
 (tests
- :high-card := (__ ["HA" "D2" "H3" "C9" "DJ"])
- :pair := (__ ["HA" "HQ" "SJ" "DA" "HT"])
- :two-pair := (__ ["HA" "DA" "HQ" "SQ" "HT"])
- :three-of-a-kind := (__ ["HA" "DA" "CA" "HJ" "HT"])
- :straight := (__ ["HA" "DK" "HQ" "HJ" "HT"])
- :straight := (__ ["HA" "H2" "S3" "D4" "C5"])
- :flush := (__ ["HA" "HK" "H2" "H4" "HT"])
- :full-house := (__ ["HA" "DA" "CA" "HJ" "DJ"])
- :four-of-a-kind := (__ ["HA" "DA" "CA" "SA" "DJ"])
- :straight-flush := (__ ["HA" "HK" "HQ" "HJ" "HT"]))
+  :high-card := (__ ["HA" "D2" "H3" "C9" "DJ"])
+  :pair := (__ ["HA" "HQ" "SJ" "DA" "HT"])
+  :two-pair := (__ ["HA" "DA" "HQ" "SQ" "HT"])
+  :three-of-a-kind := (__ ["HA" "DA" "CA" "HJ" "HT"])
+  :straight := (__ ["HA" "DK" "HQ" "HJ" "HT"])
+  :straight := (__ ["HA" "H2" "S3" "D4" "C5"])
+  :flush := (__ ["HA" "HK" "H2" "H4" "HT"])
+  :full-house := (__ ["HA" "DA" "CA" "HJ" "DJ"])
+  :four-of-a-kind := (__ ["HA" "DA" "CA" "SA" "DJ"])
+  :straight-flush := (__ ["HA" "HK" "HQ" "HJ" "HT"]))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/c4520f456f1200f3690bace30d9e26f9
