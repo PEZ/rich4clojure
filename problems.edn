@@ -63,7 +63,8 @@
    "(= __ (clojure.set/union #{:a :b :c} #{:b :c :d}))"],
   :times-solved 1128,
   :title "Intro to Sets",
-  :user "dbyrne"}
+  :user "dbyrne"
+  :extra-requires ["[clojure.set]"]}
  {:_id 9,
   :description
   "When operating on a set, the conj function returns a new set with one or more keys \"added\".",
