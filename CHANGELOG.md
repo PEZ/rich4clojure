@@ -2,7 +2,7 @@
 
 ## [Unreleased]
 
-## [0.0.3] - 2021-07-26
+## [0.0.4] - 2021-07-26
 
 * Zero-pad the problem number in filenames to make it easier to find problems in numeric order
 
