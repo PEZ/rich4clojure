@@ -7,6 +7,10 @@
 ;; 
 ;; Lists can be constructed with either a function or a
 ;; quoted form.
+;; 
+;; Note: You can't redefine `__` to solve this problem.
+;; You will need to replace `__` in the `(tests ...)`
+;; form.
 
 (def __ :tests-will-fail)
 

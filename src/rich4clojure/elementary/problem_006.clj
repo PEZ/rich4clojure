@@ -8,9 +8,9 @@
 ;; Vectors can be constructed several ways. You can
 ;; compare them with lists.
 ;; 
-;; 
-;; Note : the brackets [] surrounding the blanks __ are
-;; part of the test case.
+;; Note: You can't redefine `__` to solve this problem.
+;; You will need to replace `__` in the `(tests ...)`
+;; form.
 
 (def __ :tests-will-fail)
 

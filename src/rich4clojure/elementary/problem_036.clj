@@ -7,6 +7,10 @@
 ;; Tags: [math syntax]
 ;; 
 ;; Can you bind x, y, and z so that these are all true?
+;; 
+;; Note: You can't redefine `__` to solve this problem.
+;; You will need to replace `__` in the `(tests ...)`
+;; form.
 
 (def __ :tests-will-fail)
 

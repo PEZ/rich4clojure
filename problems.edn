@@ -1,6 +1,6 @@
 ({:_id 1,
   :description
-  "Replace the `__` with a value which will make the test pass. Run the test by loading the file. Once the file is loaded you can run the tests again by either reloading the file or evaluating the `(tests ...)` form. Don't over think it! Hint: true is equal to true.",
+  "<p>Define `__` or replace the `__` in the `(tests ...)` form with a value which will make the test pass.</p><p>Run the test by loading the file. Once the file is loaded you can run the tests again by either reloading the file or evaluating the `(tests ...)` form.</p><p>Don't over think it! Hint: true is equal to true.</p>",
   :difficulty "Elementary",
   :tags [],
   :tests ["(= __ true)"],
@@ -9,7 +9,7 @@
   :user "dbyrne"}
  {:_id 2,
   :description
-  "<p>If you are not familiar with <a href='https://en.wikipedia.org/wiki/Polish_notation'>polish notation</a>, simple arithmetic might seem confusing.</p><p><strong>Note:</strong> Enter only enough to fill in the blank (in this case, a single number) - do not retype the whole problem.</p>",
+  "<p>If you are not familiar with <a href='https://en.wikipedia.org/wiki/Polish_notation'>polish (prefix) notation</a>, simple arithmetic might seem confusing.</p><p><strong>Note:</strong> Enter only enough to fill in the blank (in this case, a single number) - do not retype the whole problem.</p>",
   :difficulty "Elementary",
   :tags [],
   :tests ["(= (- 10 (* 2 3)) __)"],
@@ -27,7 +27,7 @@
   :user "dbyrne"}
  {:_id 4,
   :description
-  "Lists can be constructed with either a function or a quoted form.",
+  "<p>Lists can be constructed with either a function or a quoted form.</p><p>Note: You can't redefine `__` to solve this problem. You will need to replace `__` in the `(tests ...)` form.</p>",
   :difficulty "Elementary",
   :tags [],
   :tests ["(= (list __) '(:a :b :c))"],
@@ -35,7 +35,7 @@
   :title "Intro to Lists",
   :user "dbyrne"}
  {:description
-  "Vectors can be constructed several ways.  You can compare them with lists.\r\n<br/><br/><b>Note</b>: the brackets [] surrounding the blanks __ are part of the test case.",
+  "<p>Vectors can be constructed several ways.  You can compare them with lists.\r\n</p><p>Note: You can't redefine `__` to solve this problem. You will need to replace `__` in the `(tests ...)` form.</p>",
   :tags nil,
   :_id 6,
   :difficulty "Elementary",
@@ -386,7 +386,7 @@
   :title "Local bindings",
   :user "amalloy"}
  {:_id 36,
-  :description "Can you bind x, y, and z so that these are all true?",
+  :description "<p>Can you bind x, y, and z so that these are all true?</p><p>Note: You can't redefine `__` to solve this problem. You will need to replace `__` in the `(tests ...)` form.</p>",
   :difficulty "Elementary",
   :tags ["math" "syntax"],
   :tests
@@ -398,7 +398,7 @@
   :user "amalloy"}
  {:_id 37,
   :description
-  "Regex patterns are supported with a special reader macro.",
+  "Regex patterns are supported with a special reader tag.",
   :difficulty "Elementary",
   :tags ["regex" "syntax"],
   :tests ["(= __ (apply str (re-seq #\"[A-Z]+\" \"bA1B3Ce \")))"],

@@ -5,11 +5,14 @@
 ;; By 4Clojure user: dbyrne
 ;; Difficulty: Elementary
 ;; 
-;; Replace the `__` with a value which will make the test
-;; pass. Run the test by loading the file. Once the file
-;; is loaded you can run the tests again by either
-;; reloading the file or evaluating the `(tests ...)`
-;; form. Don't over think it! Hint: true is equal to true.
+;; Define `__` or replace the `__` in the `(tests ...)`
+;; form with a value which will make the test pass.
+;; 
+;; Run the test by loading the file. Once the file is
+;; loaded you can run the tests again by either reloading
+;; the file or evaluating the `(tests ...)` form.
+;; 
+;; Don't over think it! Hint: true is equal to true.
 
 (def __ :tests-will-fail)
 
