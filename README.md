@@ -4,32 +4,70 @@ Welcome to the [Rich Comment Form](https://calva.io/rich-comments/) (RCF) port o
 
 ## What it is
 
-1. A repository that lets you learn and practice [Clojure](https://clojure.org), directly from the comfort of Clojure REPL enhanced editor.
-2. A ”copy” of the now closed **`4clojure.com`** site. It served us so wonderfully well!
+1. A repository that lets you learn and practice [Clojure](https://clojure.org), directly from the comfort of a Clojure REPL enhanced editor.
+2. A ”copy” of the now closed **4clojure.com** site. It served us so wonderfully well!
 
 _Anyway, if you have come here to practice Clojure, you are at the right place!_
 
 ## How it works
 
-First thing first. If you are totally unfamiliar with Clojure, this might be better used as your second step in Getting Started with the language. A super quick first step might be to use [Calva's Getting Started REPL](https://calva.io/getting-started/). You'll need to at least know how to:
+You solve programming problems using Clojure and your editor of choice. The problems are designed in increasing difficulty levels. You can use it to take your first baby steps in the language as well as honing your skills with it.
 
-* Start a project REPL (starting _this_ project's REPL, that is. Which is very easy if you are using [Calva](https://calva.io))
-* Load a Clojure file
-* Evaluate forms
+## Get started
 
-### Get started
+To get to where you can start solving problems there are basically two alternatives:
 
-To get to where you can start solving problems:
+1. Open this repository in [Gitpod](https://gitpod.io).
+1. Fork and clone to your machine.
+    1. Use Calva
+    1. Use some other editor
 
-0. Fork and clone.
-    I suggest you also make a branch for your practicing. This because you will be modifying the files, and might still want to be able to push clean pull requests.
+### Using Gitpod
+
+This repository is prepared for Gitpod such that both the [Clojure tools](https://clojure.org/guides/deps_and_cli) and [Calva](https://calva.io) are installed. So you can start training Clojure like so:
+
+1. Open https://gitpod.io/#https://github.com/pez/rich4clojure in your web browser.
+2. Click the **nREPL** button in the status bar
+    ![](status-bar-nrepl-button.png)
+    1. Select **Start your project with a REPL server and connect (aka Jack-in)** from the quick pick menu
+    2. Select **Rich 4Clojure** in the **Project types** menu.
+3. Solve problems. See below.
+
+#### I'm new to Calva
+
+To learn the basics of Calva, use the **nREPL** button to **Disconnect from the REPL server** (if needed), then click the button again and select **Fire up the ”Getting Started” REPL server**. See https://calva.io/getting-started/ for what to expect.
+
+#### I'm new to Clojure
+
+Welcome to Clojure! There is a lot to learn and many concepts to grasp. But fear not:
+
+* Since you are using this Gitpod friendly project, you don't need to install anything and can wait with having to understand all the things about how Clojure is wired up and such.
+* The **Getting Started REPL** mentioned above also sports a basic Clojure guide.
+* The problems in this repository starts of from easy and are designed to build up your Clojure skills.
+
+#### OK, so what is Gitpod?
+
+Gitpod is a development environment that runs in your web browser. It uses [VS Code](https://code.visualstudio.com). You can open any GitHub/GitLab/Bitbucket repository there by prepending its URL with `https://gitpod.io/#`. See https://gitpod.io for more on Gitpod.
+
+### Using your machine
+
+This option can be easy, if you have Java and the Clojure tools installed and you know how to work with Clojure projects in your editor. It can also be a bit cumbersome if you don't. (In this case, I suggest you use Gitpod first and have some fun with the 4Clojure problems before you invest the time to figure out how to install the things.)
+
+Once you have Java and the Clojure tools installed:
+
+0. Clone this repo to your machine.
+
+If you are using VS Code, install Calva and follow the same instructions as for the Gitpod option above, from step 2 and on.
+
+If you are using some other editor (these instructions are work in progress, please consider sending PRs about it):
+
 1. Open the project in your Clojure-enabled editor.
-1. Start the **Rich 4Clojure** project REPL and connect it to your editor session. If you are using Calva, this is as easy as issuing the **Start a Project REPL (aks Jack-in)** command and select **Rich 4Clojure** in the **Project types** menu that pops up.
+1. Start the project REPL and connect it to your editor session.
 1. Load the file `dev/repl.cljc`.
     * This will enable the test runner to run the problem tests that you find in each problem file.
     * If you are using Calva Jack-in as per above, this will be done automatically for you.
 
-### Find problems
+## Find problems
 
 The problems reside, each in separate `.clj` files, in subfolders of the general difficulty level:
 
@@ -40,7 +78,7 @@ The problems reside, each in separate `.clj` files, in subfolders of the general
 
 Find suitable/fun problems and hack away on it. Right now the original site's guidance on which order to take on the problems are not translated to this repo, but generally just in numerical order at the difficulty level of your choice should work.
 
-### Solve problems
+## Solve problems
 
 Each problem has at least:
 
@@ -62,7 +100,7 @@ Some problems also have restrictions, e.g:
 
 Restrictions list ”things” shipped with **Clojure** that your solution is not allowed to use. Your editor's *lookup* features can give you documentation and defintions for the restricted symbols. Sometimes using the restricted ”things” in your solution, or just peeking at their documentation can help you find solutions that don't use them.
 
-#### Running the tests
+### Running the tests
 
 The process of taking on a problem is:
 
