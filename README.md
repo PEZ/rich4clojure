@@ -1,5 +1,7 @@
 # Rich 4Clojure
 
+*Practice Clojure using Interactive Programming in your editor.*
+
 ![Rich 4Clojure](etc/images/rich4clojure-header.png)
 
 Welcome to the [Rich Comment Form](https://calva.io/rich-comments/) (RCF) port of 4Clojure! ❤️
@@ -19,12 +21,12 @@ You solve programming problems using Clojure and your editor of choice. The prob
 
 To get to where you can start solving problems there are basically two alternatives:
 
-1. Open this repository in **Gitpod**.
+1. Using [Calva](https://calva.io) in your browser ([Gitpod](https://gitpod.io)).
 1. Fork and clone to your machine.
     1. Use **Calva**
     1. Use some other editor with Clojure abilities
 
-### Using Gitpod - Zero installs!
+### Calva in Gitpod - Zero installs!
 
 This repository is prepared for [Gitpod](https://gitpod.io) such that both the [Clojure tools](https://clojure.org/guides/deps_and_cli) and [Calva](https://calva.io) are installed. So you can start training Clojure like so:
 
@@ -45,10 +47,10 @@ See [calva.io/getting-started](https://calva.io/getting-started/) for what to ex
 
 #### I'm new to Clojure
 
-Welcome to Clojure! There is a lot to learn and many concepts to grasp. But fear not:
+Welcome to Clojure! There is a lot to learn and many concepts to grasp. But fear not!
 
 * Since you are using this Gitpod friendly project, you don't need to install anything and can wait with having to understand all the things about how Clojure is wired up and such.
-* The **Getting Started REPL** mentioned above also sports a basic Clojure guide.
+* The [**Getting Started REPL**](https://calva.io/getting-started/) mentioned above also sports a basic Clojure guide.
 * The problems in this repository starts of from easy and are designed to build up your Clojure skills.
 
 #### OK, so what is Gitpod?
@@ -71,7 +73,7 @@ Once you have Java and the Clojure tools installed:
 
 If you are using VS Code, install Calva and follow the same instructions as for the Gitpod option above, from step 2 and on.
 
-If you are using some other editor (these instructions are work in progress, please consider sending PRs with instructions and settings for your favorite editor):
+If you are using some other editor:
 
 1. Open the project in your Clojure-enabled editor.
 1. Start the project REPL and connect it to your editor session.
@@ -172,7 +174,9 @@ PR:s are also welcome. If it is the content of a particular problem you want to 
 
 ## Support the project
 
-Please consider contributing. Issues and pull requests are welcome. Though I have to figure out a good process for PRs. (It is quite a mess in my translation script right now. So I might not always be super quick to pull.)
+Consider starring ⭐ this repository, pretty please. 🙏
+
+Please also consider contributing. Issues and pull requests are welcome. Right now the ”other editor” instructions can improve greatly, especially with **Editor X** configuration added to this repository. Please consider sending PRs with instructions and settings for your favorite editor.
 
 The [Discussions](https://github.com/PEZ/rich4clojure/discussions) tab is also there for us to discuss both the project and solutions.
 
