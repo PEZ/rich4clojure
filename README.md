@@ -1,6 +1,6 @@
 # Rich 4Clojure
 
-![Rich 4Clojure](rich4clojure-header.png)
+![Rich 4Clojure](etc/images/rich4clojure-header.png)
 
 Welcome to the [Rich Comment Form](https://calva.io/rich-comments/) (RCF) port of 4Clojure! ❤️
 
@@ -30,7 +30,7 @@ This repository is prepared for [Gitpod](https://gitpod.io) such that both the [
 
 1. Open https://gitpod.io/#https://github.com/pez/rich4clojure in your web browser.
 2. Click the **nREPL** button in the status bar
-    ![VS Code Statusbar with Clojure REPL button](status-bar-nrepl-button.png)
+    ![VS Code Statusbar with Clojure REPL button](etc/images/status-bar-nrepl-button.png)
     1. Select **Start your project with a REPL server and connect (aka Jack-in)** from the quick pick menu
     2. Select **Rich 4Clojure** in the **Project types** menu.
 3. Solve problems. See below.
@@ -39,7 +39,7 @@ This repository is prepared for [Gitpod](https://gitpod.io) such that both the [
 
 To learn the basics of Calva, use the **nREPL** button to **Disconnect from the REPL server** (if needed), then click the button again and select **Fire up the ”Getting Started” REPL server**.
 
-![Calva's Clojure Getting Started REPL](clojure-getting-started-repl.png)
+![Calva's Clojure Getting Started REPL](etc/images/clojure-getting-started-repl.png)
 
 See [calva.io/getting-started](https://calva.io/getting-started/) for what to expect.
 
@@ -168,7 +168,7 @@ The name, **Rich 4Clojure**, comes from the fact that it relies on [Rich Comment
 
 This is an early version from a quite automated translation of the original problems. There'll be dragons. Please consider filing issues, starting [discussions](https://github.com/PEZ/rich4clojure/discussions), or chat me up on the [Clojurian's Slack](http://clojurians.net/) (I'm **@pez**, there).
 
-PR:s are also welcome. If it is the content of a particular problem you want to suggest changes for, edit the `problems.edn` file.
+PR:s are also welcome. If it is the content of a particular problem you want to suggest changes for, edit the `etc/problems.edn` file.
 
 ## Support the project
 
@@ -176,7 +176,7 @@ Please consider contributing. Issues and pull requests are welcome. Though I hav
 
 The [Discussions](https://github.com/PEZ/rich4clojure/discussions) tab is also there for us to discuss both the project and solutions.
 
-If you want to contrubute with problems, that is also super welcome. I suggest you start that with adding it as a suggestion in [Discussions](https://github.com/PEZ/rich4clojure/discussions). Then, if we agree the problem should be added, add it as a PR to the `problems.edn` file, and I will generate the files and gists from it. (Until I've set up a CI/CD pipeline.)
+If you want to contrubute with problems, that is also super welcome. I suggest you start that with adding it as a suggestion in [Discussions](https://github.com/PEZ/rich4clojure/discussions). Then, if we agree the problem should be added, add it as a PR to the `etc/problems.edn` file, and I will generate the files and gists from it. (Until I've set up a CI/CD pipeline.)
 
 If you want to encourage my work with this project you are welcome to sponsor me:
 
