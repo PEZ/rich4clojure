@@ -1,6 +1,9 @@
-# Rich 4Clojure
+# Rich 4Clojure 
 
 *Practice Clojure using Interactive Programming in your editor.*
+ 
+ [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/pez/rich4clojure)
+
 
 ![Rich 4Clojure](etc/images/rich4clojure-header.png)
 
