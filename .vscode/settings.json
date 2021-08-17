@@ -4,10 +4,15 @@
       "name": "Rich 4Clojure",
       "projectType": "deps.edn",
       "menuSelections": {
-        "cljAliases": ["repl"]
+        "cljAliases": [
+          "repl"
+        ]
       },
       "afterCLJReplJackInCode": "(require 'repl)",
       "cljsType": "none"
     }
-  ]
+  ],
+  "workbench.editorAssociations": {
+    "doc/INSTRUCTIONS.md": "vscode.markdown.preview.editor"
+  }
 }
