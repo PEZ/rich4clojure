@@ -13,6 +13,6 @@
     }
   ],
   "workbench.editorAssociations": {
-    "doc/INSTRUCTIONS.md": "vscode.markdown.preview.editor"
+    "INSTRUCTIONS.md": "vscode.markdown.preview.editor"
   }
 }
