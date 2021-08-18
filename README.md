@@ -78,6 +78,16 @@ This is an early version from a quite automated translation of the original prob
 
 PR:s are also welcome. If it is the content of a particular problem you want to suggest changes for, edit the `etc/problems.edn` file.
 
+## Quirks
+
+I'll collect known/discovered quirks here if they are show stoppers.
+
+### Zero install failing
+
+The Gitpod option can fail installing (I know, the irony) the Calva extension if you have adblockers/etcetera active on the Gitpod site. See [Issue #9](https://github.com/PEZ/rich4clojure/issues/9) for clues and workarounds.
+
+
+
 ## Support the project
 
 Consider starring ⭐ this repository, pretty please. 🙏

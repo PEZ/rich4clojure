@@ -6,6 +6,11 @@ First you need to start the project and connect the editor to its REPL. This is 
 
 1. Click the **REPL** button in the status bar
     ![VS Code Statusbar with Clojure REPL button](images/status-bar-nrepl-button.png)
+    <details><summary>Don't see the REPL button?</summary>
+    
+    This could be because some firewall or adblocker prevents the downloading of the Calva extension. See [issue #9](https://github.com/PEZ/rich4clojure/issues/9) for more clues on this.
+    
+    </details>
 1. Select **Start your project with a REPL server and connect (aka Jack-in)** from the quick pick menu
 1. Select **Rich 4Clojure** in the **Project types** menu.
 
