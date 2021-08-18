@@ -6,8 +6,11 @@ vscode:
     - betterthantomorrow.calva
 
 tasks:
-  # brew installs an ancient Clojure not supporting this
-  #- name: Prepare deps
-  #  init: clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"0.8.3"},cider/cider-nrepl {:mvn/version,"0.26.0"}}}' -P
+  - name: Prepare deps
+    init: clojure -Sdeps '{:deps {nrepl/nrepl {:mvn/version,"0.8.3"},cider/cider-nrepl {:mvn/version,"0.26.0"}}}' -P
   - name: INSTRUCTIONS
     command: code doc/INSTRUCTIONS.md
+
+github:
+  prebuilds:
+    main: true
