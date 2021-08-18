@@ -1,7 +1,7 @@
-# Rich 4Clojure 
+# Rich 4Clojure
 
 *Practice Clojure using Interactive Programming in your editor.*
- 
+
  [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/pez/rich4clojure)
 
 
@@ -66,7 +66,7 @@ If you are using some other editor:
 1. Load the file `dev/repl.cljc`.
     * This will enable the test runner to run the problem tests that you find in each problem file.
     * If you are using Calva Jack-in as per above, this will be done automatically for you.
-1. Open [doc/INSTRUCTIONS.md](INSTRUCTIONS.md) to find out how to use **Rich 4Clojure** to practice Clojure.
+1. Open [doc/INSTRUCTIONS.md](doc/INSTRUCTIONS.md) to find out how to use **Rich 4Clojure** to practice Clojure.
 
 ## What about the name?
 
