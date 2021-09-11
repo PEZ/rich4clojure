@@ -9,3 +9,4 @@
 /.nrepl-port
 .calva/**/*.calva-repl
 .lsp/sqlite*.db
+.DS_Store
