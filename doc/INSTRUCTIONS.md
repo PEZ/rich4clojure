@@ -88,7 +88,7 @@ Restrictions list ”things” shipped with **Clojure** that your solution is no
 The process of taking on a problem is:
 
 0. Open the file
-1. Load the file
+1. Load the file (run the command **Calva: Load Current File and Dependencies**)
     * This will run the tests and they will fail. A failing test looks something like so:
     ```
     clj:rich4clojure.easy.problem-39=>
