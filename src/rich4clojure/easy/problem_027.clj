@@ -19,11 +19,11 @@
   )
 
 (tests
-  (__ '(1 2 3 4 5)) :=
-  (__ "racecar") :=
-  (__ [:foo :bar :foo]) :=
-  (__ '(1 1 3 3 1 1)) :=
-  (__ '(:a :b :c)) :=)
+  (__ '(1 2 3 4 5)) := false
+  (__ "racecar") := true
+  (__ [:foo :bar :foo]) := true
+  (__ '(1 1 3 3 1 1)) := true
+  (__ '(:a :b :c)) := false)
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/a9620760aad9da40c497f5750087a095
