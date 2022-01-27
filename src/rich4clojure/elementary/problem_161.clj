@@ -17,10 +17,10 @@
   )
 
 (tests
-  __ := #{2}
-  #{1} := __
-  __ := #{1 2}
-  #{1 2} := __)
+ (clojure.set/superset? __ #{2}) := true
+ (clojure.set/subset? #{1} __) := true
+ (clojure.set/superset? __ #{1 2}) := true
+ (clojure.set/subset? #{1 2} __) := true)
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/fb5992733dcee8d4e449957ed7ece7db
