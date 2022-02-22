@@ -11,3 +11,8 @@
 .lsp/sqlite*.db
 .DS_Store
 **/.cache
+
+.idea
+.vscode
+.vscode-test
+rich4clojure.iml
