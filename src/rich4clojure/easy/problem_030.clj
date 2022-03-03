@@ -9,10 +9,13 @@
 ;; Write a function which removes consecutive duplicates
 ;; from a sequence.
 
-(def __ :tests-will-fail)
+(defn de-dup [coll]
+  (map first (partition-by identity coll)))
+
+(def __ de-dup)
 
 (comment
-  
+  (map first (partition-by identity [1 1 2 3 3 2 2 3]))
   )
 
 (tests

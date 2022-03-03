@@ -8,11 +8,14 @@
 ;; 
 ;; Write a function which duplicates each element of a
 ;; sequence.
+(defn solution [coll]
+  (interleave coll coll))
 
-(def __ :tests-will-fail)
+
+(def __ solution)
 
 (comment
-  
+  (flatten (map (partial repeat 2) [ 1 2 3 4]))
   )
 
 (tests

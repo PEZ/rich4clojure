@@ -10,10 +10,15 @@
 
 (def restricted [flatten])
 
-(def __ :tests-will-fail)
+(defn my-flatten [s]
+          (reduce
+           #(concat %
+                    (if (coll? %2) (my-flatten %2) [%2])) [] s))
+
+(def __ my-flatten)
 
 (comment
-  
+  (my-flatten '((1 2) 3 [4 [5 6]]))
   )
 
 (tests

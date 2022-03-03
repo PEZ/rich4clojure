@@ -9,10 +9,20 @@
 ;; Write a function which returns the first X fibonacci
 ;; numbers.
 
-(def __ :tests-will-fail)
+(def __ (fn [x]
+  (loop [an [] a 1 b 1 i 0]
+    (if (= x i)
+      an
+      (recur (conj an a) b (+ a b) (inc i))))))
 
 (comment
-  
+  (letfn [(fib [x]
+    (loop [an [] a 1 b 1 i 0]
+      (if (= x i)
+        an
+        (recur (conj an a) b (+ a b) (inc i)))))]
+    (fib 3)
+  )
   )
 
 (tests

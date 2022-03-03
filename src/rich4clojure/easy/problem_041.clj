@@ -8,11 +8,14 @@
 ;; 
 ;; Write a function which drops every Nth item from a
 ;; sequence.
+(defn solution [coll n]
+ (apply concat (partition-all (dec n) n coll)))
 
-(def __ :tests-will-fail)
+
+(def __ solution)
 
 (comment
-  
+  (partition-all (dec 3) 3 [1 2 3 4 5 6 7 8])
   )
 
 (tests

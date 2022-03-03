@@ -11,7 +11,10 @@
 
 (def restricted [split-at])
 
-(def __ :tests-will-fail)
+(defn solution [n coll]
+    (conj [] (take n coll) (drop n coll)))
+
+(def __ solution)
 
 (comment
   

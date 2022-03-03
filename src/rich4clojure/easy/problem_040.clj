@@ -11,10 +11,13 @@
 
 (def restricted [interpose])
 
-(def __ :tests-will-fail)
+(defn solution [sep coll]
+  (rest (interleave (repeat sep) coll)))
+
+(def __ solution)
 
 (comment
-  
+  (solution ", " ["one" "two" "three"])
   )
 
 (tests

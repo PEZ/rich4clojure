@@ -9,7 +9,10 @@
 ;; Write a function which replicates each element of a
 ;; sequence a variable number of times.
 
-(def __ :tests-will-fail)
+(defn solution [coll n]
+  (apply interleave (repeat n coll)))
+
+(def __ solution)
 
 (comment
   

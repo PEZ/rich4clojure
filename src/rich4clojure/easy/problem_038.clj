@@ -11,10 +11,15 @@
 
 (def restricted [max max-key])
 
-(def __ :tests-will-fail)
+(defn solution [& xs]
+  (reduce #(if (< % %2) %2 %) xs))
+
+
+
+(def __ solution)
 
 (comment
-  
+  (solution 1 8 34)
   )
 
 (tests

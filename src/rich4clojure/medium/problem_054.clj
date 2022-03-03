@@ -12,10 +12,16 @@
 
 (def restricted [partition partition-all])
 
-(def __ :tests-will-fail)
+(defn solution [n coll]
+  (letfn [(split-n [coll]
+                   ([)]
+                    '()))]
+    (split-n coll)))
+
+(def __ solution)
 
 (comment
-  
+  (reduce (take 2)  (range 9))
   )
 
 (tests

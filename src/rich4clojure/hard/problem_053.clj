@@ -30,7 +30,9 @@
 
 (defn partition-by-equal-one
   [xs]
-  (let [switch (reductions = true (map #(= 1 %) (map - (rest xs) (pop xs))))]
+  (let [switch (reductions = true 
+                           (map #(= 1 %) 
+                                (map - (rest xs) (pop xs))))]
     (->> switch
          (map list xs)
          (partition-by second)
@@ -49,10 +51,15 @@
 (def __ longest-subseq-ones)
 
 (comment
-  (__ [1 0 1 2 3 0 4 5])
-  (__ [7 6 5 4 3 2 3])
+  (partition-by-equal-one [1 0 1 2 3 0 4 5])
+  (let [coll [7 6 5 4 3 2 3]]
+  (reductions = true                
+         (map #(= 1 %) 
+         (map - (rest coll) (pop coll)))))
+
   (__ [5 6 1 3 2 7])
   (__ [2 3 3 4 5 1 2 3 4])
+  )
   )
 
 
@@ -64,4 +71,5 @@
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/2cd6e7158b0ea3d24d125c997a0f8d1e
+
 

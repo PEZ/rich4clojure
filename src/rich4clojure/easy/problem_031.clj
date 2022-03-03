@@ -9,7 +9,10 @@
 ;; Write a function which packs consecutive duplicates
 ;; into sub-lists.
 
-(def __ :tests-will-fail)
+(defn solution [coll]
+  (partition-by identity coll))
+
+(def __ solution)
 
 (comment
   

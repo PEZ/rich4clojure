@@ -13,7 +13,11 @@
 ;; sub-sequences themselves can be returned in any order
 ;; (this is why 'set' is used in the test cases).
 
-(def __ :tests-will-fail)
+(defn solution [coll]
+(map second (group-by type coll)))
+
+(def __ solution)
+
 
 (comment
   

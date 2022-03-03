@@ -8,10 +8,11 @@
 ;; 
 ;; Regex patterns are supported with a special reader tag.
 
-(def __ :tests-will-fail)
+
+(def __ :to-fail)
 
 (comment
-  
+  (reduce #(if (< % %2) %2 %) 1 [1 2 3 4])
   )
 
 (tests

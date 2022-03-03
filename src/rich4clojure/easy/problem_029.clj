@@ -9,15 +9,19 @@
 ;; Write a function which takes a string and returns a new
 ;; string containing only the capital letters.
 
-(def __ :tests-will-fail)
+(defn filter-caps [s]
+  (apply str (re-seq #"[A-Z]+" s)))
+
+(def __ filter-caps)
 
 (comment
-  
+(apply str (filter #(<= (int \A) (int %) (int \Z))
+         "HeLlO, WoRlD!" ))
   )
 
 (tests
   (__ "HeLlO, WoRlD!") := "HLOWRD"
-  (__ "nothing") :=
+  (__ "nothing") := ""
   (__ "$#A(*&987Zf") := "AZ")
 
 ;; Share your solution, and/or check how others did it:

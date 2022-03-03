@@ -12,10 +12,13 @@
 
 (def restricted [interleave])
 
-(def __ :tests-will-fail)
+(defn solution [coll1 coll2]
+  (apply concat (map vector coll1 coll2)))
+
+(def __ solution)
 
 (comment
-  
+  (apply concat (map vector [1 2 3] [4 5 6]))
   )
 
 (tests

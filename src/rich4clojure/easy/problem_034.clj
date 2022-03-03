@@ -11,10 +11,13 @@
 
 (def restricted [range])
 
-(def __ :tests-will-fail)
+(defn solution [start end]
+  (take-while (partial > end) (iterate inc start)))
+
+(def __ solution)
 
 (comment
-  
+  (take-while (partial > 4) (iterate inc 1))
   )
 
 (tests
