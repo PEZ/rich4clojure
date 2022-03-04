@@ -13,10 +13,14 @@
 
 (def restricted [juxt])
 
-(def __ :tests-will-fail)
+(defn solution 
+  [& fs] 
+  (fn [& xs] (reduce #(conj %1 (apply %2 xs)) [] fs))) 
+
+(def __ solution)
 
 (comment
-  
+  ((solution + max min) 1 2 3)
   )
 
 (tests

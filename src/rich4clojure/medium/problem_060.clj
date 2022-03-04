@@ -15,9 +15,27 @@
 
 (def __ :tests-will-fail)
 
+(defn my-redus 
+  ([f coll]
+   (lazy-seq 
+    (if-let [s (seq coll)]
+      (my-redus f (first s) (rest s))
+      (list (f)))))
+  ([f init coll]
+   (if (reduced? init)
+     (list @init)
+     (cons init
+           (lazy-seq
+            (when-let [s (seq coll)]
+              (my-redus f (f init (first s)) (rest s))))))))
+
+(def __ my-redus)
+
 (comment
+  (take 5 (my-redus + (range)))
+
+)  
   
-  )
 
 (tests
   (take 5 (__ + (range))) := [0 1 3 6 10]

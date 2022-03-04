@@ -1,3 +1,4 @@
+
 (ns rich4clojure.medium.problem-058
   (:require [hyperfiddle.rcf :refer [tests]]))
 
@@ -12,11 +13,14 @@
 ;; them from right-to-left.
 
 (def restricted [comp])
+(defn solution [& fs]
+  (fn [& xs]
+    ((reduce (fn [v g] [(apply g v)]) xs (reverse fs)) 0)))
 
-(def __ :tests-will-fail)
+(def __ solution)
 
 (comment
-  
+  ((solution rest reverse) [1 2 3 4])
   )
 
 (tests

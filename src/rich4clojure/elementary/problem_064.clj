@@ -15,10 +15,21 @@
 ;; reducing the entire collection to one value. Don't
 ;; worry, it's not as complicated as it sounds.
 
-(def __ :tests-will-fail)
+(defn solution [n]
+  (if (= n 1)
+    [2]
+    (into [2] 
+          (take n 
+                (remove 
+                 (fn [x] 
+                   (some #(= 0 (mod x %)) 
+                         (range 3 x 2))) 
+                 (iterate #(+ 2 %) 3))))))
+
+(def __ solution)
 
 (comment
-  
+  (solution 2)
   )
 
 (tests
