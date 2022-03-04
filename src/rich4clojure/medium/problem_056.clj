@@ -11,10 +11,19 @@
 
 (def restricted [distinct])
 
-(def __ :tests-will-fail)
+(defn solution
+  [coll]
+  (letfn [(step [xs seen]
+            (when-let [s (seq xs)]
+              (if (contains?  seen (first xs))
+                (recur (rest s) seen)
+                (cons (first xs) (step (rest s) (conj seen (first xs)))))))]
+    (step coll #{})))
+
+  (def __ solution)
 
 (comment
-  
+  (solution [1 2 1 3 1 2 4] )
   )
 
 (tests

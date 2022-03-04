@@ -9,7 +9,7 @@
 ; subsequent REPL interactions will run tests
 
 ; prevent test execution during cljs hot code reload
-#?(:cljs (defn ^:dev/before-load stop [] (set! hyperfiddle.rcf/*enabled* false)))
-#?(:cljs (defn ^:dev/after-load start [] (set! hyperfiddle.rcf/*enabled* true)))
+;#?(:cljs (defn ^:dev/before-load stop [] (set! hyperfiddle.rcf/*enabled* false)))
+;; #?(:cljs (defn ^:dev/after-load start [] (set! hyperfiddle.rcf/*enabled* true)))
 
 (println "RCF enabled!")
