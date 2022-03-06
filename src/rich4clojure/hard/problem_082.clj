@@ -35,6 +35,16 @@
                     (edit-dist ra rb) 
                     (edit-dist ra b) 
                     (edit-dist a rb)))))))
+(defn to-graph [word-set]
+  (into {} 
+        (for [s word-set] 
+          [s (filter #(= 1 (edit-dist s %)) word-set)])))
+
+(defn find-paths [graph start seen]
+        (for [n (graph start)]
+          (if (seen start)
+            seen
+            (find-paths graph n (conj seen start)))))
 
 (def solution 
   (fn [word-set]

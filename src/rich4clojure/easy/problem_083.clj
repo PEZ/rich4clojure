@@ -9,8 +9,10 @@
 ;; booleans. Your function should return true if some of
 ;; the parameters are true, but not all of the parameters
 ;; are true. Otherwise your function should return false.
+(defn solution [& coll]
+  (> (count (into #{} coll)) 1))
 
-(def __ :tests-will-fail)
+(def __ solution)
 
 (comment
   
