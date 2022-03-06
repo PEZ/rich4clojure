@@ -10,7 +10,13 @@
 ;; 1+2+3=6. Write a function which returns true for
 ;; perfect numbers and false otherwise.
 
-(def __ :tests-will-fail)
+
+
+(defn solution [n]
+  (= (apply + (filter #(= 0 (mod n %)) 
+                      (range 1 (+ (quot n 2) 1)))) n))
+
+(def __ solution)
 
 (comment
   

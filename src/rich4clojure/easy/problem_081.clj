@@ -12,7 +12,14 @@
 
 (def restricted [intersection])
 
-(def __ :tests-will-fail)
+(def solution 
+  (fn [aset bset]
+    (into #{}
+          (for [item aset 
+                :when (contains? bset item)] 
+            item))))
+
+(def __ solution)
 
 (comment
   

@@ -16,10 +16,40 @@
 
 (def restricted [merge-with])
 
-(def __ :tests-will-fail)
+(defn ^:private ^:static
+  reduce1
+       ([f coll]
+             (let [s (seq coll)]
+               (if s
+         (reduce1 f (first s) (next s))
+                 (f))))
+       ([f val coll]
+          (let [s (seq coll)]
+            (if s
+              (if (chunked-seq? s)
+                (recur f 
+                       (.reduce (chunk-first s) f val)
+                       (chunk-next s))
+                (recur f (f val (first s)) (next s)))
+         val))))
+
+(defn solution 
+  [f & a-lot-maps]
+  (when (some identity a-lot-maps)
+    (let [merge-entry (fn [m e]
+                        (let [k (key e) v (val e)]
+                          (if (contains? m k)
+                            (assoc m k (f (get m k) v))
+                            (assoc m k v))))
+          merge2 (fn [m1 m2]
+                   (reduce1 merge-entry (or m1 {}) (seq m2)))]
+      (reduce1 merge2 a-lot-maps))))
+
+(def __ solution)
 
 (comment
-  
+  (solution * {:a 2, :b 3, :c 4} {:a 2} {:b 2}))
+   (reduce1 + 0 [1 2 3])
   )
 
 (tests

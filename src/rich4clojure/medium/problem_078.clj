@@ -11,7 +11,16 @@
 
 (def restricted [trampoline])
 
-(def __ :tests-will-fail)
+(defn solution
+  ([f]
+   (let [ret (f)]
+    (if (fn? ret)
+      (recur ret)
+      ret)))
+  ([f & args]
+   (solution #(apply f args))))
+
+(def __ solution)
 
 (comment
   

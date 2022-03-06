@@ -10,7 +10,16 @@
 ;; that only contains the numbers which are perfect
 ;; squares.
 
-(def __ :tests-will-fail)
+(defn solution [s]
+  (let [n-vec (map #(Integer/parseInt %) (re-seq #"\d+" s))
+        is_squares? (fn [n]
+                      (let [n_sqrt (int (Math/sqrt n))
+                            nn (int (Math/pow n_sqrt 2))]
+                        (= n nn)))
+        n-vec-squares (filter is_squares? n-vec)]
+    (apply str (interpose "," (map str  n-vec-squares))) ))
+
+(def __ solution)
 
 (comment
   

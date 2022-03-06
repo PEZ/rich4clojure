@@ -20,7 +20,51 @@
 ;; returns true if they can be arranged into one
 ;; continuous word chain, and false if they cannot.
 
-(def __ :tests-will-fail)
+(defn edit-dist 
+  "Edit distance between two words
+   refer to: https://en.wikipedia.org/wiki/Levenshtein_distance"
+  [a b] 
+  (cond 
+    (not (or a b)) 0 
+    (not b) (count a) 
+    (not a) (count b) 
+    :else (let [ra (next a) rb (next b)] 
+            (if (= (first a) (first b)) 
+              (edit-dist ra rb) 
+              (+ 1 (min 
+                    (edit-dist ra rb) 
+                    (edit-dist ra b) 
+                    (edit-dist a rb)))))))
+
+(def solution 
+  (fn [word-set]
+    (letfn [(edit-dist [a b] 
+              (cond 
+                (not (or a b)) 0 
+                (not b) (count a) 
+                (not a) (count b) 
+                :else (let [ra (next a) rb (next b)] 
+                        (if (= (first a) (first b)) 
+                          (edit-dist ra rb) 
+                          (+ 1 (min 
+                                (edit-dist ra rb) 
+                                (edit-dist ra b) 
+                                (edit-dist a rb)))))))
+            (find-paths [graph start seen] 
+              (if (seen start) 
+                seen
+                (for [n (graph start)] 
+                  (find-paths graph n (conj seen start)))))] 
+      (let [graph (into {} 
+                        (for [s word-set] 
+                          [s (filter #(= 1 (edit-dist s %)) word-set)]))]
+        (if (some (fn [w] 
+                    (some #(= word-set %) 
+                          (flatten (find-paths graph w #{})))) 
+                  word-set) 
+          true false)))))
+
+(def __ solution)
 
 (comment
   

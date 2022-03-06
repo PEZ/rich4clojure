@@ -11,8 +11,19 @@
 ;; which are coprime to x. The special case f(1) equals 1.
 ;; Write a function which calculates Euler's totient
 ;; function.
+(defn solution [n]
+  (let [gcd_equal_1 (fn [n m]
+                      (letfn [(gcd [a b]
+                                (if (zero? b)
+                                  a
+                                  (recur b (mod a b))))]
+                        (= (gcd n m) 1)))
+        number_in_n (range 1 n)]
+    (if (= n 1) 
+      1
+      (count (filter #(gcd_equal_1 n %) number_in_n)))))
 
-(def __ :tests-will-fail)
+(def __ solution)
 
 (comment
   

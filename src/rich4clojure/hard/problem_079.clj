@@ -20,11 +20,14 @@
     [current (inc current)])
   )
 
-(defn minimum-path [tri-rows]
-  (let [min-values-each-row (apply map min tri-rows)
-        ]))
 
-(def __ :tests-will-fail)
+(def solution (fn [s]
+  (last
+   (reduce (fn [c l] 
+             (map #(+ (min %2 %3) %) l (rest c) c))
+     (reverse s)))))
+
+(def  __ solution)
 
 (comment
   (def tri-rows '([1]

@@ -14,10 +14,48 @@
 ;; least two words. Words without any anagrams should not
 ;; be included in the result.
 
-(def __ :tests-will-fail)
+(defn solution [word-vec]
+  (let [dict-word (map #(vector (group-by identity %) %) word-vec )
+        merge-entity (fn [m e]
+                       (let [[k v] e]
+                         (if (contains? m k)
+                           (assoc m k (conj (get m k) v))
+                           (assoc m k [v]))))
+        reduced-after-merge (reduce merge-entity {} dict-word)
+        anagrams-vec (filter #(> (count %) 1) (vals reduced-after-merge))]
+        (into #{} (map #(into #{} %) anagrams-vec))))
+
+(defn solution2 
+  "use sorted string as key"
+  [word-vec]
+  (let [dict-word (map #(vector (sort %) %) word-vec )
+        merge-entity (fn [m e]
+                       (let [[k v] e]
+                         (if (contains? m k)
+                           (assoc m k (conj (get m k) v))
+                           (assoc m k [v]))))
+        reduced-after-merge (reduce merge-entity {} dict-word)
+        anagrams-vec (filter #(> (count %) 1) (vals reduced-after-merge))]
+        (into #{} (map #(into #{} %) anagrams-vec))))
+
+(defn solution3 
+  "use merge-with into to simplify the merge-entity"
+  [word-vec]
+  (for [[_ x]
+        (apply merge-with into 
+               (for [s word-vec]
+                 {(sort s) #{s}})) :when (< 1 (count x))]
+    (into #{} x)))
+
+(def __ solution3)
 
 (comment
-  
+  (#(into #{}
+              (for [[_ x]
+                    (apply merge-with into
+                           (for [s %] {(apply sorted-set s) #{s}}))
+                    :when (< 1 (count x))]
+                x)) ["meat" "mat" "team" "mate" "eat"])
   )
 
 (tests
