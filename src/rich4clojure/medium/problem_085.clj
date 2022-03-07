@@ -9,8 +9,11 @@
 ;; Write a function which generates the power set of a
 ;; given set. The power set of a set x is the set of all
 ;; subsets of x, including the empty set and x itself.
+(defn solution 
+  [c]
+  (reduce #(into % (for [x %] (conj x %2))) #{#{}} c))
 
-(def __ :tests-will-fail)
+(def __ solution)
 
 (comment
   

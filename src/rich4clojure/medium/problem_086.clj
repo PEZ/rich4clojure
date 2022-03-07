@@ -14,8 +14,21 @@
 ;; number. An unhappy number (or sad number) is one that
 ;; loops endlessly. Write a function that determines if a
 ;; number is happy or not.
+(defn solution [n]
+  (letfn [(check [n i]
+                  (let [str-n (str n)
+                        str-n-vec (re-seq #"\d" str-n)
+                        n-digits (map #(Integer/parseInt %) str-n-vec)
+                        square-sum (apply + (map #(* % %) n-digits))]
+                    (if (= square-sum 1)
+                      true
+                      (if (< i 10)
+                        (check square-sum (inc i))
+                        false))))]
+    (try  (check n 0)
+          (finally false))))
 
-(def __ :tests-will-fail)
+(def __ solution)
 
 (comment
   
