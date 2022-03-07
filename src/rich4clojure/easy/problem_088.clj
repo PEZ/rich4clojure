@@ -9,8 +9,13 @@
 ;; Write a function which returns the symmetric difference
 ;; of two sets. The symmetric difference is the set of
 ;; items belonging to one but not both of the two sets.
+(defn solution [a b]
+  (let [ldiff (clojure.set/difference a b)
+        rdiff (clojure.set/difference b a)
+        lr-union (clojure.set/union ldiff rdiff)]
+    lr-union))
 
-(def __ :tests-will-fail)
+(def __ solution)
 
 (comment
   

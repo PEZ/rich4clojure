@@ -23,6 +23,13 @@
 ;; - You must visit each edge exactly once.
 ;; 
 ;; - All edges are undirected.
+(def build-graph
+  [edges m]
+  (if-let [[k v] (first edges)]
+    (if (contains? m k)
+      (build-graph (rest edges) (assoc m k (into (m k) [v])))
+      (build-graph (rest edges) (assoc m k [v])))
+    m))
 
 (def __ :tests-will-fail)
 
