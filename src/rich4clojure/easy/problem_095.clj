@@ -10,6 +10,13 @@
 ;; sequence represents a binary tree. Each node in the
 ;; tree must have a value, a left child, and a right
 ;; child.
+(defn solution [s]
+  (let [filtered (map #(count %) 
+                      (filter #(and (seq %) (not-any? coll? %)) 
+                              (tree-seq next rest s)))]
+    (if (seq filtered)
+      (not-any? #(not= (count %) 3) filtered)
+      false)))
 
 (def __ :tests-will-fail)
 

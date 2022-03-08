@@ -18,8 +18,12 @@
 ;; 
 ;; Write a function which returns the nth row of Pascal's
 ;; Triangle.
+(defn solution [n]
+  (nth
+   (iterate #(concat [1] (map + % (rest %)) [1]) [1])
+   (dec n)))
 
-(def __ :tests-will-fail)
+(def __ solution)
 
 (comment
   

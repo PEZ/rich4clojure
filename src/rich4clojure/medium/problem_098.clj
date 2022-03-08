@@ -11,8 +11,12 @@
 ;; (f b). Write a function with arguments f and D that
 ;; computes the equivalence classes of D with respect to
 ;; f.
+(defn solution
+  [a b]
+  (set (map (comp set val)
+            (group-by a b))))
 
-(def __ :tests-will-fail)
+(def __ solution)
 
 (comment
   

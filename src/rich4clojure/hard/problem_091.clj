@@ -22,7 +22,10 @@
 ;; 
 ;; -Each edge is undirected (can be traversed either
 ;; direction).
-
+;; todo:
+;; 1: build graph from the edge set
+;; 2: graph-dfs on graph start one vertex
+;; 3: all nodes have path cover 
 (def __ :tests-will-fail)
 
 (comment

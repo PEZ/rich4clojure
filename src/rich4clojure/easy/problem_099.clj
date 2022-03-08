@@ -8,8 +8,16 @@
 ;; 
 ;; Write a function which multiplies two numbers and
 ;; returns the result as a sequence of its digits.
+(defn multiply-digits
+  [a b]
+  (let [n (* a b)
+        digits (fn digit-fun [n]
+                 (if (= n 0)
+                   nil
+                   (concat (digit-fun (quot n 10)) [(mod n 10)])))]
+    (digits n)))
 
-(def __ :tests-will-fail)
+(def __ multiply-digits)
 
 (comment
   

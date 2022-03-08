@@ -17,8 +17,19 @@
 ;; don't need to handle any numbers greater than MMMCMXCIX
 ;; (3999), the largest number representable with ordinary
 ;; letters.
+(defn solution [x]
+  (let [y {\I 1 \V 5 \X 10 \L 50
+           \C 100 \D 500 \M 1000}]
+    (apply +
+     (reduce
+      #(let [z (y %2)]
+        (conj %1 (if (>= z (last %1))
+        z
+        (- z))))
+      [0]
+      (reverse x)))))
 
-(def __ :tests-will-fail)
+(def __ solution)
 
 (comment
   

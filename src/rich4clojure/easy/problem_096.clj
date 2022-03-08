@@ -12,8 +12,17 @@
 ;; not a given binary tree is symmetric. (see To Tree, or
 ;; not to Tree for a reminder on the tree representation
 ;; we're using).
+(defn m [y]
+  (if (nil? y)
+    nil
+    [(first y)
+     (m (last y))
+     (m (second y))]))
 
-(def __ :tests-will-fail)
+(defn solution [x]
+  (= (second x) (m (last x))))
+
+(def __ solution)
 
 (comment
   
