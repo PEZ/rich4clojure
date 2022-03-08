@@ -31,7 +31,27 @@
             (build-graph (rest edges) (assoc m k [v])))
           m))
 
-(defn find-paths [graph start seen]
+(defn build-graph2 [edges m]
+  (if-let [[k v] (first edges)]
+    (build-graph2 (rest edges) (assoc m k (if (contains? m k)
+                                           (into (m k) [v])
+                                           [v])))
+    m))
+;; todo: build edge graph to do
+;; [:a :b] - [:a :c] - [:c :b]
+;; use #{:a :b} to avoid the order
+(defn edge-links
+  "transfer the edge into node then build the graph"
+  [edges]
+  (let [edge-in-set (into #{} (map #(into #{} %) edges))]
+    (for [e1 edge-in-set
+          e2 edge-in-set
+          :when (and  (seq (clojure.set/intersection e1 e2)) (not (= e1 e2)))]
+      [(str e1) (str e2)] )))
+
+(defn find-paths
+  "not working for complex one to multiple edges!"
+  [graph start seen]
   (if (some #(= start %) seen)
     seen
     (for [n (graph start)]
@@ -84,7 +104,15 @@
 
 (def g (build-graph edges {}))
 
-(def __ :tests-will-fail)
+(defn check-edges-closure
+  [edges]
+  (let [g (build-graph2 edges {})
+        nodes (into #{} (flatten edges))
+        possible-paths (map #(into #{} %) (for [n nodes] (graph-dfs g n)))]
+    (if  (some #(= nodes %) possible-paths)
+      true false)))
+
+(def __ check-edges-closure)
 
 (comment
   
