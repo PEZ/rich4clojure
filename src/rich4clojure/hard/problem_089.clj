@@ -31,26 +31,6 @@
 ;;             (build-graph (rest edges) (assoc m k [v])))
 ;;           m))
 
-(defn find-paths [graph start seen]
-        (for [n (graph start)]
-          (if (some #(= start %) seen)
-            seen
-            (find-paths graph n (conj seen start)))))
-
-(def edges [[:a :b] [:a :c] [:c :b] [:a :e]
-              [:b :e] [:a :d] [:b :d] [:c :e]
-            [:d :e] [:c :f] [:d :f]])
-
-(def g (build-graph edges {}))
-
-
-(defn build-graph [edges m]
-        (if-let [[k v] (first edges)]
-          (if (contains? m k)
-            (build-graph (rest edges) (assoc m k (into (m k) [v])))
-            (build-graph (rest edges) (assoc m k [v])))
-          m))
-
 (defn build-graph2 [edges m]
   (if-let [[k v] (first edges)]
     (build-graph2 (rest edges) (assoc m k (if (contains? m k)
