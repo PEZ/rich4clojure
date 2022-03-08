@@ -9,8 +9,14 @@
 ;; Write a function which calculates the least common
 ;; multiple. Your function should accept a variable number
 ;; of positive integers or ratios.
+(defn lcm  [& x]
+  (let [y (apply min x)]
+    (loop [z y]
+      (if (every? #(zero? (mod z %)) x)
+        z
+        (recur (+ z y))))))
 
-(def __ :tests-will-fail)
+(def __ lcm)
 
 (comment
   

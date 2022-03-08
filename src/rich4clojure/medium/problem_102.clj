@@ -13,7 +13,16 @@
 ;; hyphen-separated strings and converts them to
 ;; camel-case strings.
 
-(def __ :tests-will-fail)
+(defn solution [words]
+  (if (clojure.string/includes? words "-")
+    (let [splitted-words  (.split words "-")]
+      (apply 
+       str
+       (cons (first splitted-words)
+             (map #(clojure.string/capitalize %) (rest splitted-words)))))
+    words))
+
+(def __ solution)
 
 (comment
   
