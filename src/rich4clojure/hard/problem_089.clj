@@ -23,13 +23,66 @@
 ;; - You must visit each edge exactly once.
 ;; 
 ;; - All edges are undirected.
-(def build-graph
-  [edges m]
-  (if-let [[k v] (first edges)]
-    (if (contains? m k)
-      (build-graph (rest edges) (assoc m k (into (m k) [v])))
-      (build-graph (rest edges) (assoc m k [v])))
-    m))
+
+(defn build-graph [edges m]
+        (if-let [[k v] (first edges)]
+          (if (contains? m k)
+            (build-graph (rest edges) (assoc m k (into (m k) [v])))
+            (build-graph (rest edges) (assoc m k [v])))
+          m))
+
+(defn find-paths [graph start seen]
+  (if (some #(= start %) seen)
+    seen
+    (for [n (graph start)]
+      (find-paths graph n (conj seen start)))))
+
+(defn visited?
+  "Predicate which returns true if the node v has been visited already, false otherwise.
+  [reference](http://dnaeon.github.io/graphs-and-clojure/)"
+  [v coll]
+  (some #(= % v) coll))
+
+
+(defn find-neighbors
+  "Returns the sequence of neighbors for the given node"
+  [v coll]
+  (get coll v))
+
+(defn graph-dfs
+  "Traverses a graph in Depth First Search (DFS)"
+  [graph v]
+  (loop [stack   (vector v) ;; Use a stack to store nodes we need to explore
+         visited []]        ;; A vector to store the sequence of visited nodes
+    (if (empty? stack)      ;; Base case - return visited nodes if the stack is empty
+      visited
+      (let [v           (peek stack)
+            neighbors   (find-neighbors v graph)
+            not-visited (filter (complement #(visited? % visited)) neighbors)
+            new-stack   (into (pop stack) not-visited)]
+        (if (visited? v visited)
+          (recur new-stack visited)
+          (recur new-stack (conj visited v)))))))
+
+(defn graph-bfs
+  "Traverses a graph in Breadth First Search (BFS)."
+  [graph v]
+  (loop [queue   (conj clojure.lang.PersistentQueue/EMPTY v) ;; Use a queue to store the nodes we need to explore
+         visited []]                                         ;; A vector to store the sequence of visited nodes
+    (if (empty? queue) visited                               ;; Base case - return visited nodes if the queue is empty
+        (let [v           (peek queue)
+              neighbors   (find-neighbors v graph)
+              not-visited (filter (complement #(visited? % visited)) neighbors)
+              new-queue   (apply conj (pop queue) not-visited)]
+          (if (visited? v visited)
+            (recur new-queue visited)
+            (recur new-queue (conj visited v)))))))
+
+(def edges [[:a :b] [:a :c] [:c :b] [:a :e]
+              [:b :e] [:a :d] [:b :d] [:c :e]
+            [:d :e] [:c :f] [:d :f]])
+
+(def g (build-graph edges {}))
 
 (def __ :tests-will-fail)
 
