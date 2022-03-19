@@ -1,4 +1,4 @@
-(ns rich4clojure.medium.problem-103
+ø(ns rich4clojure.medium.problem-103
   (:require [hyperfiddle.rcf :refer [tests]]))
 
 ;; = Generating k-combinations =
@@ -12,8 +12,18 @@
 ;; 
 ;; The number of k-combinations for a sequence is equal
 ;; to the binomial coefficient .
+(defn solution [n coll]
+  (letfn [(combinations [n coll]
+            (if (= 1 n)
+              (map list coll)
+              (lazy-seq
+               (when-let [[head & tail] (seq coll)]
+                 (concat (for [x (combinations (dec n) tail)]
+                           (cons head x))
+                         (combinations n tail))))))]
+    (set (map set (combinations n coll)))))
 
-(def __ :tests-will-fail)
+(def __ solution)
 
 (comment
   
