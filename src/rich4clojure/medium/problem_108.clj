@@ -10,8 +10,15 @@
 ;; smallest to largest, find the smallest single number
 ;; which appears in all of the sequences. The sequences
 ;; may be infinite, so be careful to search lazily.
+(defn solution [first-list & rest-lists]
+  (letfn [(in-list? [x lists]
+            (if-let [[list & more] (seq lists)]
+              (and (= x (first (drop-while #(< % x) list)))
+                   (recur x more))
+              true))]
+    (first (filter #(in-list? % rest-lists) first-list))))
 
-(def __ :tests-will-fail)
+(def __ solution)
 
 (comment
   

@@ -21,8 +21,11 @@
 ;; return a function (f x) which computes x n. Observe
 ;; that the effect of this is to preserve the value of n
 ;; for use outside the scope in which it is defined.
+(defn solution [n]
+  (fn [x]
+    (apply * (repeat n x))))
 
-(def __ :tests-will-fail)
+(def __ solution)
 
 (comment
   
