@@ -1,5 +1,5 @@
 {:paths ["src"]
  :deps {org.clojure/clojure {:mvn/version "1.10.2"}
-        hyperfiddle/rcf {:git/url "https://github.com/hyperfiddle/rcf.git" :sha "09d546b56f6027fbea67736edf3af75acca29ba5"}}
+        com.hyperfiddle/rcf {:mvn/version "20220926-202227"}}
  :aliases
  {:repl {:extra-paths ["dev"]}}}
