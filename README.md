@@ -62,10 +62,8 @@ If you are using VS Code, install Calva and follow the same instructions as for 
 If you are using some other editor:
 
 1. Open the project in your Clojure-enabled editor.
-1. Start the project REPL and connect it to your editor session.
-1. Load the file `dev/repl.cljc`.
-    * This will enable the test runner to run the problem tests that you find in each problem file.
-    * If you are using Calva Jack-in as per above, this will be done automatically for you.
+1. Start the project REPL and connect it to your editor session (Calva Jack-in).
+    * This will load user.clj and activate in-REPL test framework
 1. Open [doc/INSTRUCTIONS.md](doc/INSTRUCTIONS.md) to find out how to use **Rich 4Clojure** to practice Clojure.
 
 ## What about the name?
