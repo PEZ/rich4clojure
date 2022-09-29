@@ -2,4 +2,4 @@
  :deps {org.clojure/clojure {:mvn/version "1.10.2"}
         com.hyperfiddle/rcf {:mvn/version "20220926-202227"}}
  :aliases
- {:repl {:extra-paths ["dev"]}}}
+ {}}
