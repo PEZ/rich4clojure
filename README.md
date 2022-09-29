@@ -63,7 +63,6 @@ If you are using some other editor:
 
 1. Open the project in your Clojure-enabled editor.
 1. Start the project REPL and connect it to your editor session (Calva Jack-in).
-    * This will load user.clj and activate in-REPL test framework
 1. Open [doc/INSTRUCTIONS.md](doc/INSTRUCTIONS.md) to find out how to use **Rich 4Clojure** to practice Clojure.
 
 ## What about the name?
