@@ -2,9 +2,6 @@
 
 *Practice Clojure using Interactive Programming in your editor.*
 
- [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/pez/rich4clojure)
-
-
 ![Rich 4Clojure](doc/images/rich4clojure-header.png)
 
 Welcome to the [Rich Comment Form](https://calva.io/rich-comments/) (RCF) port of 4Clojure! ❤️
