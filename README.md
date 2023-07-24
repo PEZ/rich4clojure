@@ -8,7 +8,7 @@ Welcome to the [Rich Comment Form](https://calva.io/rich-comments/) (RCF) port o
 
 ## What it is
 
-1. A repository that lets you learn and practice [Clojure](https://clojure.org), directly from the comfort of a Clojure REPL enhanced editor. (From your web browser, With zero installs, if you like.)
+1. A repository that lets you learn and practice [Clojure](https://clojure.org), directly from the comfort of a Clojure REPL enhanced editor. (Even from your web browser, With zero installs, if you like.)
 2. A ”copy” of the now closed **4clojure.com** site. It served us so wonderfully well!
 
 _Anyway, if you have come here to practice Clojure, you are at the right place!_
@@ -21,10 +21,26 @@ You solve programming problems using Clojure and your editor of choice. The prob
 
 To get to where you can start solving problems there are basically two alternatives:
 
-1. Using [Calva](https://calva.io) in your browser ([Gitpod](https://gitpod.io)).
 1. Use your machine.
-    1. With **Calva**
+    1. With **[Calva](https://calva.io)**
     1. With some other editor with Clojure abilities
+1. Using Calva in your browser, powered by ([Gitpod](https://gitpod.io)).
+
+### On your machine
+
+This option can be easy, if you have Java and the Clojure tools installed and you know how to work with Clojure projects in your editor. It can also be a bit cumbersome if you don't. (In this case, I suggest you use Gitpod first and have some fun with the 4Clojure problems before you invest the time to figure out how to install the things.)
+
+Once you have Java and the Clojure tools installed:
+
+0. Clone this repo to your machine.
+
+If you are using VS Code, install Calva and follow the same instructions as for the Gitpod option above, from step 2 and on.
+
+If you are using some other editor:
+
+1. Open the project in your Clojure-enabled editor.
+1. Start the project REPL and connect it to your editor session (Calva Jack-in).
+1. Open [doc/INSTRUCTIONS.md](doc/INSTRUCTIONS.md) to find out how to use **Rich 4Clojure** to practice Clojure.
 
 ### Calva in Gitpod - Zero installs!
 
@@ -45,22 +61,6 @@ Gitpod is a development environment that runs in your web browser. It uses [VS C
 [https://gitpod.io/#https://github.com/pez/rich4clojure](https://gitpod.io/#https://github.com/pez/rich4clojure)
 
 See https://gitpod.io for the full story.
-
-### On your machine
-
-This option can be easy, if you have Java and the Clojure tools installed and you know how to work with Clojure projects in your editor. It can also be a bit cumbersome if you don't. (In this case, I suggest you use Gitpod first and have some fun with the 4Clojure problems before you invest the time to figure out how to install the things.)
-
-Once you have Java and the Clojure tools installed:
-
-0. Clone this repo to your machine.
-
-If you are using VS Code, install Calva and follow the same instructions as for the Gitpod option above, from step 2 and on.
-
-If you are using some other editor:
-
-1. Open the project in your Clojure-enabled editor.
-1. Start the project REPL and connect it to your editor session (Calva Jack-in).
-1. Open [doc/INSTRUCTIONS.md](doc/INSTRUCTIONS.md) to find out how to use **Rich 4Clojure** to practice Clojure.
 
 ## What about the name?
 
