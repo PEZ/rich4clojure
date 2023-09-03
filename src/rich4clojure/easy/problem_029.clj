@@ -17,7 +17,7 @@
 
 (tests
   (__ "HeLlO, WoRlD!") := "HLOWRD"
-  (__ "nothing") :=
+  (__ "nothing") := ""
   (__ "$#A(*&987Zf") := "AZ")
 
 ;; Share your solution, and/or check how others did it:
