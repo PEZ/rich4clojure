@@ -17,9 +17,9 @@
   )
 
 (tests
-  (__ :a {:a nil :b 2}) :=
-  (__ :b {:a nil :b 2}) :=
-  (__ :c {:a nil :b 2}) :=)
+  true := (__ :a {:a nil :b 2})
+  false := (__ :b {:a nil :b 2})
+  false := (__ :c {:a nil :b 2}))
 
 ;; Share your solution, and/or check how others did it:
 ;; https://gist.github.com/70ba70e1e4e0f249a90bc99bda5f8aff
