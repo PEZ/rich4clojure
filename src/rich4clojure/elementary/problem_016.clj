@@ -7,7 +7,7 @@
 ;; 
 ;; Write a function which returns a personalized greeting.
 
-(def __ :tests-will-fail)
+(def __ #(str "Hello, " % "!"))
 
 (comment
   

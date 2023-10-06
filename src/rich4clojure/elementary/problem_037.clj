@@ -8,7 +8,7 @@
 ;; 
 ;; Regex patterns are supported with a special reader tag.
 
-(def __ :tests-will-fail)
+(def __ "ABC")
 
 (comment
   

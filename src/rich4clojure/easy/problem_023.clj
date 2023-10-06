@@ -10,10 +10,19 @@
 
 (def restricted [reverse rseq])
 
-(def __ :tests-will-fail)
+(def __ (fn [coll] 
+          (loop [x coll
+                 res []]
+            (if-not (seq x) 
+              res
+              (recur (rest x) (cons (first x) res))))))
 
 (comment
-  
+  (first [1 2 3 4 5])
+  (rest [1 2 3 4 5])
+  (cons 1 [2])
+  (__ [1 2 3 4 5])
+  (__ (sorted-set 5 7 2 7)) 
   )
 
 (tests

@@ -10,10 +10,12 @@
 ;; This is one of the fundamental techniques used in
 ;; functional programming.
 
-(def __ :tests-will-fail)
+(def __ [5 4 3 2 1])
 
 (comment
-  
+  ((fn foo [x] 
+     (when (> x 0) 
+       (conj (foo (dec x)) x))) 5)
   )
 
 (tests

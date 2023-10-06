@@ -15,7 +15,7 @@
 ;; reducing the entire collection to one value. Don't
 ;; worry, it's not as complicated as it sounds.
 
-(def __ :tests-will-fail)
+(def __ +)
 
 (comment
   

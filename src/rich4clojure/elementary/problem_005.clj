@@ -12,7 +12,7 @@
 ;; expected to supply only one answer, which will cause
 ;; all the tests to pass.
 
-(def __ :tests-will-fail)
+(def __ '(1 2 3 4))
 
 (comment
   

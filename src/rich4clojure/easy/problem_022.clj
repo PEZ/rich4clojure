@@ -11,7 +11,12 @@
 
 (def restricted [count])
 
-(def __ :tests-will-fail)
+(def __ (fn [coll] 
+          (loop [x coll
+                 n 0]
+            (if-not (seq x)
+              n
+              (recur (rest x) (+ n 1))))))
 
 (comment
   

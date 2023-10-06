@@ -14,10 +14,10 @@
 ;; the forms. Using ->> can sometimes make your code more
 ;; readable.
 
-(def __ :tests-will-fail)
+(def __ #(reduce + %))
 
 (comment
-  
+  (->> [2 5 4 1 3 6] (drop 2) (take 3) (map inc))
   )
 
 (tests

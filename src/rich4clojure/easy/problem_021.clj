@@ -11,10 +11,18 @@
 
 (def restricted [nth])
 
-(def __ :tests-will-fail)
+(def __ (fn [coll n]
+          (loop [x coll
+                 cnt 0]
+            (if (= cnt n)
+              (first x)
+              (recur (rest x) (+ cnt 1))))))
 
 (comment
-  
+   (__ '(4 5 6 7) 2)
+  (__ [:a :b :c] 0)
+  (__ [1 2 3 4] 1)
+  (__ '([1 2] [3 4] [5 6]) 2)
   )
 
 (tests

@@ -11,7 +11,7 @@
 ;; s. Do not confuse the map function with the map data
 ;; structure.
 
-(def __ :tests-will-fail)
+(def __ '(6 7 8))
 
 (comment
   

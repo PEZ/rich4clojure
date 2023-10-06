@@ -11,10 +11,17 @@
 
 (def restricted [last])
 
-(def __ :tests-will-fail)
+(def __ (fn [s]
+          (loop [x s
+                 last-el []]
+            (if-not (seq x) 
+              last-el
+              (recur (rest x) (first x))))))
 
 (comment
-  
+  (__ [1 2 3 4 5])
+  (__ '(5 4 3))
+  (__ ["b" "c" "d"])
   )
 
 (tests

@@ -9,10 +9,10 @@
 ;; Write a function which returns only the odd numbers
 ;; from a sequence.
 
-(def __ :tests-will-fail)
+(def __ #(filter odd? %))
 
 (comment
-  
+   (__ #{1 2 3 4 5}) 
   )
 
 (tests

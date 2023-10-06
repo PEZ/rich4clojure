@@ -14,7 +14,7 @@
 ;; 
 ;; Don't over think it! Hint: true is equal to true.
 
-(def __ :tests-will-fail)
+(def __ true)
 
 (comment
   

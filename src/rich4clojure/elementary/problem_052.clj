@@ -9,7 +9,7 @@
 ;; Let bindings and function parameter lists support
 ;; destructuring.
 
-(def __ :tests-will-fail)
+(def __ [2 4])
 
 (comment
   

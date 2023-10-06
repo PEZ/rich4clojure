@@ -8,7 +8,7 @@
 ;; When operating on a map, the conj function returns a
 ;; new map with one or more key-value pairs "added".
 
-(def __ :tests-will-fail)
+(def __ {:b 2})
 
 (comment
   

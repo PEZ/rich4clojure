@@ -10,7 +10,7 @@
 ;; sequence consisting of all the items of s for which (f
 ;; item) returns true.
 
-(def __ :tests-will-fail)
+(def __ '(6 7 ))
 
 (comment
   

@@ -7,7 +7,7 @@
 ;; 
 ;; Clojure has many different ways to create functions.
 
-(def __ :tests-will-fail)
+(def __ 8)
 
 (comment
   

@@ -9,10 +9,19 @@
 ;; Write a function which returns the first X fibonacci
 ;; numbers.
 
-(def __ :tests-will-fail)
+(def __ (fn [n] 
+          (cond
+            (= n 1) '(1)
+            (= n 2) '(1 1)
+            :else (loop [first 1
+                         second 1
+                         res [1 1]]
+                    (if (= (count res) n)
+                      res
+                      (recur second (+ first second) (conj res (+ first second))))))))
 
 (comment
-  
+  (__ 60)
   )
 
 (tests

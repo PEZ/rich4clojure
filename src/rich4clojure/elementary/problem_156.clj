@@ -18,10 +18,22 @@
 ;; default value and a sequence of keys and constructs a
 ;; map.
 
-(def __ :tests-will-fail)
+(def __ (fn [def-value s] 
+          (loop [x s
+                 result {}]
+            (if-not (seq x)  
+              result
+              (recur (rest x) (conj result {(first x) def-value}))))))
 
+#_(fn [def-value s]
+  (into {} (for [item s]
+             {item def-value})))
 (comment
-  
+  (__ 0 [:a :b :c])
+  (__ "x" [1 2 3])
+  (__ [:a :b] [:foo :bar])
+  (__ [] [:a])
+  (__ [:a] [])
   )
 
 (tests

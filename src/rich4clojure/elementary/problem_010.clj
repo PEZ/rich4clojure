@@ -9,7 +9,7 @@
 ;; be used as lookup functions. Commas can be used to make
 ;; maps more readable, but they are not required.
 
-(def __ :tests-will-fail)
+(def __ 20)
 
 (comment
   

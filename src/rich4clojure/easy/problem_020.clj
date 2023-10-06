@@ -9,10 +9,16 @@
 ;; Write a function which returns the second to last
 ;; element from a sequence.
 
-(def __ :tests-will-fail)
+  (def __ (fn [coll]
+            (loop [x coll
+                   last-two-el []]
+              (if (= (count x) 1)
+                (first last-two-el)
+                (recur (rest x) (conj (drop 1 last-two-el)  (first x)))))))
 
 (comment
-  
+  (__ (list 1 2 3 4 5))
+  (__ ["a" "b" "c"])
   )
 
 (tests

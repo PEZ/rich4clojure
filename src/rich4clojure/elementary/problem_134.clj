@@ -10,10 +10,13 @@
 ;; true iff the map contains an entry with that key and
 ;; its value is nil.
 
-(def __ :tests-will-fail)
+(def __ (fn [key mapp] 
+          (and (contains? mapp (keyword key)) (nil? ((keyword key) mapp)))))
 
 (comment
-  
+  (__ :a {:a nil :b 2})
+  (__ :b {:a nil :b 2})
+  (__ :c {:a nil :b 2})
   )
 
 (tests

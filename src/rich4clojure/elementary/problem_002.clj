@@ -12,7 +12,7 @@
 ;; case, a single number) - do not retype the whole
 ;; problem.
 
-(def __ :tests-will-fail)
+(def __ 4)
 
 (comment
   
