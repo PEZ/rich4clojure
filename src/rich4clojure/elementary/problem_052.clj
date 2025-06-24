@@ -8,6 +8,10 @@
 ;; 
 ;; Let bindings and function parameter lists support
 ;; destructuring.
+;; 
+;; Note: You can't redefine `__` to solve this problem.
+;; You will need to replace `__` in the `(tests ...)`
+;; form.
 
 (def __ :tests-will-fail)
 
